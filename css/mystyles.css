@@ -1,0 +1,90 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+h1 {
+	font-weight: bold;
+}
+.green {
+	color: #1E732D;
+	font-weight: bold;
+}
+.jumbotron {
+	background: url(../images/bg.jpg) no-repeat center;
+	background-size: cover;
+	color: #000;
+}
+.jumbotron h2 {
+	padding: 30px 0 20px 0;
+}
+.jumbotron a {
+	color: #1E732D;
+}
+.fa-border {
+	border-color: #1E732D;
+	padding: 0.2em 0.3em 0.15em;
+}
+.logo {
+	padding: 40px 0;
+	color: #1E732D;
+}
+.about {
+	background: #1E732D;
+	color: #fff;
+	padding: 40px 0;
+}
+.info,
+.page-footer {
+	padding: 40px 0;
+	background-color: #1F1F1F;
+	color: #fff;
+}
+#map {
+	width: 100%;
+	height: 500px;
+}
+.page-footer {
+	position: relative;
+}
+.na-vrh {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+	font-size: 22px;
+	background-color: #303030;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 15px;
+}
+.page-footer a:hover {
+	background-color: #1E732D;
+	color: #fff;
+}
+/* 	=============
+	media queries */
+
+/* Custom Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.about,
+	.info ul {
+		font-size: 18px;
+	}
+}
+/* end of tablets styles */
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.about,
+	.info ul {
+		font-size: 22px;
+	}
+}/* end of desktops styles */
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}/* end of large desktops styles */
