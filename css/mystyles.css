@@ -1,13 +1,52 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+
+/* typography */
 h1 {
 	font-weight: bold;
 }
+/* span */
 .green {
 	color: #1E732D;
 	font-weight: bold;
 }
+/* navigation */
+.navbar-header {
+	height: 80px;
+}
+.navbar-default .navbar-toggle {
+	margin-top: 20px;
+	border: none;
+	background-color: #1E732D;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color: #303030;
+}
+.navbar-default .navbar-toggle:focus {
+	background-color: #303030;
+}
+.navbar-brand > img {
+	display: inline-block;
+	margin-right: 20px;
+}
+.navbar-default .navbar-brand {
+	color: #1E732D;
+}
+.navbar-default {
+	border: none;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #1E732D;
+	font-weight: bold;
+}
+/* jumbotron */
 .jumbotron {
 	background: url(../images/bg.jpg) no-repeat center;
 	background-size: cover;
@@ -23,25 +62,30 @@ h1 {
 	border-color: #1E732D;
 	padding: 0.2em 0.3em 0.15em;
 }
+/* logo */
 .logo {
 	padding: 40px 0;
 	color: #1E732D;
 }
+/* about */
 .about {
 	background: #1E732D;
 	color: #fff;
 	padding: 40px 0;
 }
+/* info and footer */
 .info,
 .page-footer {
 	padding: 40px 0;
 	background-color: #1F1F1F;
 	color: #fff;
 }
+/* google map */
 #map {
 	width: 100%;
 	height: 500px;
 }
+/* footer */
 .page-footer {
 	position: relative;
 }
@@ -62,13 +106,11 @@ h1 {
 }
 /* 	=============
 	media queries */
-
-/* Custom Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-}
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	.navbar-nav > li > a {
+		line-height: 50px;
+	}
 	.about,
 	.info ul {
 		font-size: 18px;

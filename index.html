@@ -13,8 +13,8 @@
 
     <!-- google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
- <!-- font awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- stylesheets -->
     <!-- <link href="css/bootstrap-image-gallery.min.css" rel="stylesheet" > -->
@@ -31,71 +31,61 @@
   </head>
 
   <body id="top">
+    <nav class="navbar navbar-default">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="Početna stranica"><img src="images/logo.png" width="50" height="50"><span class="hidden-xs">ORK Mokra Gora</span></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#o-nama" class="text-uppercase">O nama</a></li>
+            <li><a href="#kontakt" class="text-uppercase">Kontakt</a></li>
+            <li><a href="#map" class="text-uppercase">Gde se nalazimo</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container-fluid -->
+    </nav>
 
     <div class="jumbotron text-center">
       <div class="container">
         <h1>Dobrodošli na zvaničnu prezentaciju RK "Mokra Gora"</h1>
-        <h1>Naš novi sajt stiže uskoro!</h1>
+        <h1 class="text-uppercase">Naš novi sajt stiže uskoro!</h1>
         <h2>Do tada možete nas kontaktirati na <span class="green">064/33-60-336</span>
         <br>
-        ili putem mejla: <span class="green">rkmokr@gmail.com</span></h2>
+        ili putem mejla: <span class="green">rkmokragora@gmail.com</span></h2>
         <h2>Možete nas pratiti i na fejsbuku</h2>
         <a href="https://www.facebook.com/rk.mokragora?fref=ts"><i class="fa fa-facebook fa-3x fa-border"></i></a>
       </div>
     </div>
 
-
     <section class="logo text-center">
       <img src="images/logo.png" width="300" height="300">
-      <h1>RK "Mokra Gora"</h1>
+      <h1 class="text-uppercase">RK "Mokra Gora"</h1>
     </section>
 
-    <section class="about">
+    <section id="o-nama" class="about">
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-12 col-md-12 col-sm-12">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <h3>Uprava kluba</h3>
-            <table class="table">
-              <tr>
-                <td>Milomir</td>
-                <td>Božović</td>
-              </tr>
-              <tr>
-                <td>Vladimir</td>
-                <td>Milentijević</td>
-              </tr>
-            </table>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <h3>Igrači 2015/2016</h3>
-            <table class="table">
-              <tr>
-                <td>Ranko</td>
-                <td>Tomović</td>
-              </tr>
-              <tr>
-                <td>Miloš</td>
-                <td>Božović</td>
-              </tr>
-            </table>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <h3>Stručni štab</h3>
-            <table class="table">
-              <tr>
-                <td>Milomir</td>
-                <td>Božović</td>
-              </tr>
-              <tr>
-                <td>Vladimir</td>
-                <td>Milentijević</td>
-              </tr>
-            </table>
-          </div>
+          <div id="kontakt" class="col-lg-12 col-md-12 col-sm-12">
+            <h3 class="text-uppercase"><b>Kontakt osoba</b></h3>
+              <ul class="list-unstyled">
+                <li><i class="fa fa-user fa-lg"></i> <b>Nemanja Jakšić</b></li>
+                <li><i class="fa fa-phone fa-lg"></i> <b>Tel:</b> 064/33-60-336</li>
+                <li><i class="fa fa-envelope fa-lg"></i> <b> e-mail:</b> rkmokragora@gmail.com</li>
+              </ul>
           </div>
         </div>
       </div>
@@ -104,28 +94,20 @@
     <section class="info">
       <div class="container">
         <div class="row text-center">
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <h3><i class="fa fa-home"></i> RK "Mokra Gora"</h3>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <h3><i class="fa fa-home fa-lg"></i> ORK Mokra Gora</h3>
             <ul class="list-unstyled">
-              <li><b>Puni naziv:</b> Rukometni klub Mokra Gora Zubin Potok</li>
-              <li><b>Matični broj:</b> 09251642</li>
-              <li><b>Poreski broj:</b> 101526897</li>
-              <li><b>Datum osnivanja:</b> 16.08.2006</li>
+              <li><b>Licenca broj:</b> 150308</li>
+              <li><b>Ž.R.:</b> 365-1105-49</li>
+              <li><b>PIB:</b> 101526897</li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <h3><i class="fa fa-map-marker"></i> Adresa</h3>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <h3><i class="fa fa-map-marker fa-lg"></i> Adresa</h3>
             <ul class="list-unstyled">
               <li>Arsenija Čarnojevića 26</li>
               <li>38228 Zubin Potok</li>
-              <li>Kosovsko-Mitrovački region</li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <h3><i class="fa fa-phone"></i> Kontakt</h3>
-            <ul class="list-unstyled">
-              <li><b>Tel:</b> 064/33-60-336</li>
-              <li><b>e-mail:</b> rkmokr@gmail.com</li>
+              <li><b>Hala:</b> SRC Mokra Gora</li>
             </ul>
           </div>
         </div>
