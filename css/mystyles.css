@@ -1,17 +1,27 @@
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Play', sans-serif;
 }
 
-/* typography */
-h1 {
+/* ===== typography
+ ====================== */
+h1,
+h2 {
 	font-weight: bold;
 }
-/* span */
+/* ======= SPAN
+===================== */
 .green {
 	color: #1E732D;
 	font-weight: bold;
 }
-/* navigation */
+/* ======= NAVBAR
+========================= */
+.navbar-default {
+	border: none;
+}
+.navbar {
+	margin-bottom: 0;
+}
 .navbar-header {
 	height: 80px;
 }
@@ -29,65 +39,64 @@ h1 {
 .navbar-default .navbar-toggle:focus {
 	background-color: #303030;
 }
+.navbar-brand {
+	font-weight: bold;
+	text-transform: uppercase;
+}
 .navbar-brand > img {
 	display: inline-block;
 	margin-right: 20px;
+	width: 50px;
+	height: 50px;
 }
-.navbar-default .navbar-brand {
-	color: #1E732D;
-}
-.navbar-default {
-	border: none;
-}
-.navbar {
-	margin-bottom: 0;
-}
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a,
+.dropdown-menu > li > a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 	color: #1E732D;
 	font-weight: bold;
 }
-/* jumbotron */
-.jumbotron {
-	background: url(../images/bg.jpg) no-repeat center;
-	background-size: cover;
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+	background-color: #fff;
 	color: #000;
 }
-.jumbotron h2 {
-	padding: 30px 0 20px 0;
+/* ======= JUMBOTRON 
+========================= */
+.jumbotron {
+	background: url(../images/tim.jpg) no-repeat center;
+	background-size: cover;
+	color: #000;
+	min-height: 450px;
+	position: relative;
 }
 .jumbotron a {
-	color: #1E732D;
-}
-.fa-border {
-	border-color: #1E732D;
-	padding: 0.2em 0.3em 0.15em;
-}
-/* logo */
-.logo {
-	padding: 40px 0;
-	color: #1E732D;
-}
-/* about */
-.about {
-	background: #363942;
 	color: #fff;
-	padding: 40px 0;
+	text-decoration: none;
 }
-/* info and footer */
-.info,
-.page-footer {
-	padding: 40px 0;
-	background-color: #382513;
-	color: #fff;
+.jumbotron-caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: transparent linear-gradient(to bottom, rgba(0, 10, 58, 0.75) 0px, rgba(0, 10, 58, 0.75) 100%) repeat scroll 0% 0%;
+}
+.jumbotron-caption:hover {
+	background: transparent linear-gradient(to bottom, rgba(0, 10, 58, 0.9) 0px, rgba(0, 10, 58, 0.9) 100%) repeat scroll 0% 0%;
+}
+.super-b .img-responsive {
+	display: inline-block;
 }
 /* google map */
 #map {
 	width: 100%;
-	height: 500px;
+	height: 300px;
 }
 /* footer */
 .page-footer {
 	position: relative;
+	padding: 40px 0;
+	background-color: #382513;
+	color: #fff;
 }
 .na-vrh {
 	position: absolute;
@@ -111,6 +120,17 @@ h1 {
 	.navbar-nav > li > a {
 		line-height: 50px;
 	}
+	.navbar-brand {
+		margin: 0;
+		padding: 0;
+	} 
+	.navbar-brand > img {
+		width: 80px;
+		height: 80px;
+	}
+	.jumbotron {
+		min-height: 450px;
+	}
 	.about,
 	.info ul {
 		font-size: 18px;
@@ -120,6 +140,15 @@ h1 {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+	.navbar-default .navbar-nav > li > a {
+		font-size: 18px;
+	}
+	.jumbotron {
+		min-height: 550px;
+	}
+	.jumbotron-caption {
+		padding: 30px 0;
+	}
 	.about,
 	.info ul {
 		font-size: 22px;
@@ -128,5 +157,7 @@ h1 {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+	.jumbotron {
+		min-height: 700px;
+	}
 }/* end of large desktops styles */
