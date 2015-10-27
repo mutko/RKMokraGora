@@ -1,5 +1,6 @@
 body {
 	font-family: 'Play', sans-serif;
+	font-size: 16px;
 }
 
 /* ===== typography
@@ -83,24 +84,75 @@ h2 {
 .jumbotron-caption:hover {
 	background: transparent linear-gradient(to bottom, rgba(0, 10, 58, 0.9) 0px, rgba(0, 10, 58, 0.9) 100%) repeat scroll 0% 0%;
 }
-.super-b .img-responsive {
-	display: inline-block;
+/* ======= FIXTURES 
+========================= */
+.prev-fixture {
+	padding: 10px 0 30px;
 }
-/* google map */
+.fixture-team {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	letter-spacing: 0.5px;
+}
+.prev-score {
+	font-weight: bold;
+	font-size: 48px;
+}
+.next-fixture-date {
+	font-size: 18px;
+}
+/* ======= LINK TO SUPER B LIGA 
+========================= */
+.super-b {
+	margin: 30px 0;
+	padding: 20px 0;
+	background-color: #1F1F1F;
+}
+.super-b a {
+	color: #FFF;
+}
+/* ======= CLUB
+===================== */
+.thumbnail {
+	border: none;
+	padding: 10px;
+	color: #333;
+	border-radius: 0;
+}
+a.thumbnail:hover {
+	text-decoration: none;
+	background-color: #1E732D;
+	color: #FFF;
+}
+/* ======= ASIDE
+========================= */
+
+/* ======= contact and map
+========================= */
+.contact {
+	margin-top: 60px;
+}
 #map {
 	width: 100%;
 	height: 300px;
 }
-/* footer */
+/* ======= clubs
+========================= */
+.clubs {
+	margin: 20px 0;
+}
+/* ======= FOOTER 
+========================= */
 .page-footer {
 	position: relative;
 	padding: 40px 0;
-	background-color: #382513;
+	background-color: #1F1F1F;
 	color: #fff;
 }
 .na-vrh {
 	position: absolute;
-	top: 20px;
+	top: -20px;
 	right: 20px;
 	color: #fff;
 	font-size: 22px;
@@ -115,6 +167,19 @@ h2 {
 }
 /* 	=============
 	media queries */
+
+/* --------- media queries --------- */
+/* Custom, exstra small mobile phones */ 
+@media only screen and (max-width : 320px) {
+
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.fixture-team,
+	.next-fixture-date {
+		font-size: 18px;
+	}
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.navbar-nav > li > a {
@@ -131,9 +196,14 @@ h2 {
 	.jumbotron {
 		min-height: 450px;
 	}
-	.about,
-	.info ul {
+	.fixture-team {
 		font-size: 18px;
+	}
+	.prev-score {
+		font-size: 22px;
+	}
+	.super-b {
+		margin: 60px 0;
 	}
 }
 /* end of tablets styles */
@@ -149,10 +219,16 @@ h2 {
 	.jumbotron-caption {
 		padding: 30px 0;
 	}
-	.about,
-	.info ul {
-		font-size: 22px;
+	.prev-fixture {
+		padding: 40px;
 	}
+	.fixture-team {
+		font-size: 20px;
+	}
+	.prev-score {
+		font-size: 36px;
+	}
+
 }/* end of desktops styles */
 
 /* Large devices (large desktops, 1200px and up) */
@@ -160,4 +236,11 @@ h2 {
 	.jumbotron {
 		min-height: 700px;
 	}
+	.fixture-team {
+		font-size: 22px;
+		line-height: 65px;
+	}
+	.prev-score {
+		font-size: 48px;
+	}		
 }/* end of large desktops styles */
