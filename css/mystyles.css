@@ -2,7 +2,6 @@ body {
 	font-family: 'Play', sans-serif;
 	font-size: 16px;
 }
-
 /* ===== typography
  ====================== */
 h1,
@@ -13,6 +12,7 @@ h2 {
 ========================= */
 .navbar-default {
 	border: none;
+	border-radius: 0;
 }
 .navbar {
 	margin-bottom: 0;
@@ -59,14 +59,14 @@ h2 {
 /* ======= JUMBOTRON 
 ========================= */
 .jumbotron {
-	background: url(../images/poz.jpg) #ccc no-repeat center;
+	background: url(../images/poz.png) #ccc no-repeat center;
 	background-size: cover;
 	min-height: 450px;
 	position: relative;
+	margin-bottom: 0;
 }
 .jumbotron a {
 	text-decoration: none;
-	color: #1E732D;
 }
 .jumbotron-caption {
 	position: absolute;
@@ -83,12 +83,10 @@ h2 {
 	font-weight: bold;
 	font-size: 22px;
 	letter-spacing: 0.5px;
-	color: #1E732D;
 }
 .prev-score {
 	font-weight: bold;
 	font-size: 48px;
-	color: #1E732D;
 }
 .next-fixture-date {
 	font-size: 18px;
@@ -103,7 +101,6 @@ h2 {
 }
 a.thumbnail:hover {
 	text-decoration: none;
-	color: #333;
 }
 /* ======= ASIDE
 ========================= */
@@ -171,6 +168,28 @@ a.na-vrh:hover {
 	background-color: #1E732D;
 	color: #fff;
 }
+
+/* -- TEAM PAGE
+-- */
+body.team {
+	position: relative;
+}
+.team .jumbotron {
+	background: url(../images/tim.jpg) #ccc no-repeat center;
+}
+.team-players {
+	padding: 60px 0;
+}
+.player {
+	margin-bottom: 40px;
+}
+.affix {
+	top: 20px;
+	position: fixed;
+}
+.affix-bottom {
+	position: fixed;
+}
 /* 	=============
 	media queries */
 
@@ -181,13 +200,18 @@ a.na-vrh:hover {
 }
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+
+	/* index.html */
 	.fixture-team,
 	.next-fixture-date {
 		font-size: 18px;
 	}
+
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+	/* navigation menu for site */
 	.navbar-nav > li > a {
 		line-height: 50px;
 	}
@@ -199,9 +223,13 @@ a.na-vrh:hover {
 		width: 80px;
 		height: 80px;
 	}
+
+	/* jumbotron */
 	.jumbotron {
 		min-height: 450px;
 	}
+
+	/* index.html */
 	.fixture-team {
 		font-size: 18px;
 	}
@@ -211,20 +239,27 @@ a.na-vrh:hover {
 	.side-content {
 		text-align: left;
 	}
+
 }
 /* end of tablets styles */
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+
+	/* navigation menu for site */
 	.navbar-default .navbar-nav > li > a {
 		font-size: 18px;
 	}
+
+	/* jumbotron */
 	.jumbotron {
 		min-height: 550px;
 	}
 	.jumbotron-caption {
 		padding: 30px 0;
 	}
+
+	/* index.html */
 	.prev-fixture {
 		padding: 40px;
 	}
@@ -235,6 +270,11 @@ a.na-vrh:hover {
 		font-size: 36px;
 	}
 
+	/* ekipa.html */
+	.affix {
+		width: 250px;
+	}
+
 }/* end of desktops styles */
 
 /* Large devices (large desktops, 1200px and up) */
@@ -242,11 +282,22 @@ a.na-vrh:hover {
 	.jumbotron {
 		min-height: 700px;
 	}
+
+	/* index.html */
 	.fixture-team {
 		font-size: 22px;
 		line-height: 65px;
 	}
 	.prev-score {
 		font-size: 48px;
-	}		
+	}
+
+	/* index.html */
+	.players {
+		padding-left: 100px;
+	}	
+	.affix {
+		width: 300px;
+	}	
+
 }/* end of large desktops styles */

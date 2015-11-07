@@ -33,7 +33,7 @@
   </head>
 
   <!-- body with id for back-to-top button in footer -->
-  <body id="top">
+  <body id="top" class="team" data-spy="scroll" data-target=".scrollspy" data-offset="100">
 
     <!-- navigation menu -->
     <nav class="navbar navbar-default">
@@ -52,22 +52,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html" title="Početna stranica" class="text-uppercase">Naslovna</a></li>
-            <li class="dropdown">
-              <a href="#" title="O rukometnom klubu" class="text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Klub <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="o-klubu.html" title="RK Mokra Gora">O klubu</a></li>
-                  <li><a href="uprava.html" title="Uprava kluba">Uprava</a></li>
-                  <li><a href="sediste.html" title="Gde se nalazimo">Sedište</a></li>
-                </ul><!-- dropdown-menu -->
-            </li><!-- dropdown -->
+            <li><a href="o-klubu.html" title="O RK Mokra Gora" class="text-uppercase">Klub</a></li>
+            
             <li class="dropdown">
               <a href="#" title="Tim RK Mokra Gora" class="text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ekipa 2015/2016 <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="ekipa.html" title="Tim za tekuću sezonu">Tim</a></li>
-                  <li><a href="strucni-stab.html" title="Stručni štab za tekuću sezonu">Stručni štab</a></li>
+                  <li><a href="strucni-stab.html" title="Uprava i stručni štab kluba">Osoblje</a></li>
                   <li><a href="raspored.html" title="Raspored mečeva u tekućoj sezoni">Raspored utakmica</a></li>
                 </ul><!-- dropdown-menu -->
             </li><!-- dropdown -->
+            
             <li><a href="galerija.html" title="Galerija fotografija" class="text-uppercase">Galerija</a></li>
             <li><a href="kontakt.html" title="Kontaktirajte nas" class="text-uppercase">Kontakt</a></li>
           </ul>
@@ -80,189 +75,323 @@
     <div class="jumbotron text-center">
         <a href="#" title="Tim za sezonu 2015/2016">
           <div class="jumbotron-caption">
-            <h2 class="text-uppercase">Sezona 2015/2016</h2>
-            <p>Pogledajte naš tim za tekuću sezonu!</p>
+            <h2 class="text-uppercase">Tim u sezoni 2015/2016</h2>
           </div><!-- jumbotron-caption -->
         </a><!-- link to team page -->
     </div><!-- jumbotron -->
-
-    <!-- fixtures -->
-    <section class="fixtures text-center">   
-      
-      <!-- super B liga -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
-            <img src="images/logo-liga.jpg" class="img-responsive" alt="Logo Super B lige Srbije">
-          </div><!-- col -->
-          <div class="col-lg-10 col-md-10 col-sm-8 col-xs-12">
-            <h3 class="text-center text-uppercase">Ekipa</h3>
-          </div><!-- col -->
-          <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
-            <img src="images/logo-rss.png" class="img-responsive" alt="Logo Rukometnog saveza Srbije">
-          </div><!-- col -->
-        </div><!-- row -->
-      </div><!-- container -->  
-              
-    </section><!-- fixtures -->
-    
-    <!-- club content -->
-    <section id="club">
-      <div class="container">
-        <div class="row">
-
-          <!-- left column -->           
-          <div class="col-lg-8 col-md-8 col-sm-8">
-          
-            <!-- about-club -->
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="#" class="thumbnail" title="O RK Mokra Gora">
-                  <img src="images/hala.jpg" alt="..." class="img-responsive" >
-                  <h2 class="text-uppercase">RK Mokra Gora</h2>
-                  <p>Rukometni Klub Mokra Gora iz Zubinog Potoka osnovan je 1976. god. Od osnivanja takmičio se u ligama koje je organizovao Rukometni Savez Kosova i Metohije.</p>
-                </a><!-- thumbnail -->
-              </div><!-- col -->
-            </div><!-- row -->
-                                 
-            <!-- team and gallery -->
-            <div class="row">          
-
-              <!-- team -->
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <a href="#" class="thumbnail" title="Tim za sezonu 2015/2016">
-                  <img src="images/tim.jpg" alt="..." class="img-responsive">
-                  <h3>Ekipa 2015/2016</h3>
-                </a><!-- thumbnail -->
-              </div><!-- col -->
-
-              <!-- gallery -->
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <a href="#" class="thumbnail" title="Galerija fotografija">
-                  <img src="images/tim.jpg" alt="..." class="img-responsive">
-                  <h3>Galerija fotografija</h3>
-                </a><!-- thumbnail -->
-              </div><!-- col -->
-
-            </div><!-- row team and gallery -->
-          </div><!-- col about team and gallery-->
-
-
-              <!-- side-club-content -->
-              <aside>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                      
-                      <!-- facebook-feed -->
-            <!--         
-                        <div class="fb-page" data-href="https://www.facebook.com/rk.mokragora?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-                          <div class="fb-xfbml-parse-ignore">
-                            <blockquote cite="https://www.facebook.com/rk.mokragora?fref=ts"><a href="https://www.facebook.com/rk.mokragora?fref=ts">RK Mokra Gora</a></blockquote>
-                          </div>
-                        </div> <! fb-page -->
-                            <!-- facebook-feed -->
-
-    <!-- link to super B liga -->
-      <a href="http://srls.rs/b_liga/main.php" target="_blank" title="Tabela, rezultati, statistika i najave mečeva na sajtu Super B lige Srbije">
-        <h3>Tabela, rezultati, statistika, zapisnici sa utakmica i najave mečeva na sajtu Super B lige Srbije</h3>
-      </a><!-- link to super B liga -->
-
-
-                  <a href="http://www.rss.org.rs/#rss/glasilo/licence/klubovi:1962" target="_blank" title="Ekipa i licence na sajtu Rukometnog saveza Srbije" class="thumbnail">
-                    <div class="caption">
-                      <h3>Licence igrača na sajtu RSS <i class="fa fa-user fa-lg"></i></h3>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                  
-                  <a href="http://srls.rs/b_liga/doc/dozvole_za_sezonu_2015_16/8.pdf" target="_blank" title="Dozvola kluba u pdf formatu" class="thumbnail">
-                    <div class="caption">
-                      <h3>Dozvola kluba u sezoni 2015/2016 broj 060/2015-2016 <i class="fa fa-file-pdf-o fa-lg"></i></h3>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-
-
-
-                  <a href="https://www.youtube.com/channel/UCYpy4_diw5iEjWFjFh6O1zA" target="_blank" title="Pogledajte snimke utakmica na Youtube kanalu Rukometne superlige" class="thumbnail">
-                    <div class="caption">
-                      <h3>Snimci utakmica Super lige Srbije <i class="fa fa-film fa-lg"></i></h3>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-
-                </div><!-- col -->  
-              </aside>
    
-
-             </div><!-- row -->
-      </div><!-- container -->
-    </section><!-- club -->
-
-  
-    <section class="clubs">
+    <!-- team -->
+    <section class="team-players">
       <div class="container">
         <div class="row">
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=1" target="_blank" title="RK Šamot 65"><img src="images/liga/samot.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=2" target="_blank" title="RK Obilić"><img src="images/liga/obilic.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=3" target="_blank" title="RK Proleter"><img src="images/liga/proleter.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=4" target="_blank" title="RK Metalac"><img src="images/liga/metalac.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=5" target="_blank" title="RK Zlatar"><img src="images/liga/zlatar.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=6" target="_blank" title="RK Dubočica 54"><img src="images/liga/dubocica.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=7" target="_blank" title="RK Crvenka"><img src="images/liga/crvenka.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=8" target="_blank" title="RK Mokra Gora "><img src="images/logo.png" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=9" target="_blank" title="RK Dinamo "><img src="images/liga/dinamo.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=10" target="_blank" title="RK Kolubara"><img src="images/liga/kolubara.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=11" target="_blank" title="RK Vrbas"><img src="images/liga/vrbas.jpg" width="45" height="45"></a>
-          </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
-            <a href="http://srls.rs/b_liga/tim.php?idt=12" target="_blank" title="RK Topličanin"><img src="images/liga/toplicanin.jpg" width="45" height="45"></a>
-          </div>
+
+          <!-- scrollspy -->           
+          <section class="scrollspy col-lg-4 col-md-4 col-sm-4 hidden-xs">
+            <ul id="nav" class="nav players-list">
+              <li><a href="#GAleksandar"><span class="glyphicon glyphicon-user"></span> Gašić Aleksandar</a></li>
+              <li><a href="#RNemanja"><span class="glyphicon glyphicon-user"></span> Račić Nemanja</a></li>
+              <li><a href="#KDanilo"><span class="glyphicon glyphicon-user"></span> Košanin Danilo</a></li>
+              <li><a href="#BAndrej"><span class="glyphicon glyphicon-user"></span> Biševac Andrej</a></li>
+              <li><a href="#ALazar"><span class="glyphicon glyphicon-user"></span> Aleksić Lazar</a></li>
+              <li><a href="#TRanko"><span class="glyphicon glyphicon-user"></span> Tomović Ranko</a></li>
+              <li><a href="#SBranislav"><span class="glyphicon glyphicon-user"></span> Stanković Branislav</a></li>
+              <li><a href="#RBojan"><span class="glyphicon glyphicon-user"></span> Radičević Bojan</a></li>
+              <li><a href="#LMiodrag"><span class="glyphicon glyphicon-user"></span> Lazarević Miodrag</a></li>
+              <li><a href="#SMilos"><span class="glyphicon glyphicon-user"></span> Simić Miloš</a></li>
+              <li><a href="#DjNenad"><span class="glyphicon glyphicon-user"></span> Đukić Nenad</a></li>
+              <li><a href="#PMilan"><span class="glyphicon glyphicon-user"></span> Popović Milan</a></li>
+              <li><a href="#ANemanja"><span class="glyphicon glyphicon-user"></span> Aleksić Nemanja</a></li>
+              <li><a href="#SAleksandar"><span class="glyphicon glyphicon-user"></span> Simović Aleksandar</a></li>
+              <li><a href="#KAleksandar"><span class="glyphicon glyphicon-user"></span> Kasalović Aleksandar</a></li>
+              <li><a href="#BMilos"><span class="glyphicon glyphicon-user"></span> Božović Miloš</a></li>
+              <li><a href="#UBogdan"><span class="glyphicon glyphicon-user"></span> Utvić Bogdan</a></li>
+              <li><a href="#BBranislav"><span class="glyphicon glyphicon-user"></span> Božović Branislav</a></li>
+              <li><a href="#BNedeljko"><span class="glyphicon glyphicon-user"></span> Božović Nedeljko</a></li>
+            </ul><!-- nav-list -->
+          </section><!-- scrollspy -->
+
+          <!-- players -->           
+          <section class="players col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            
+            <article id="GAleksandar" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Gašić Aleksandar</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- GAleksandar -->
+            
+            <article id="RNemanja" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Račić Nemanja</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- RNemanja -->
+
+            <article id="KDanilo" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Košanin Danilo</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- KDanilo -->
+
+            <article id="BAndrej" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Biševac Andrej</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- BAndrej -->
+
+            <article id="ALazar" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Aleksić Lazar</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- ALazar -->
+
+            <article id="TRanko" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Tomović Ranko</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- TRanko -->
+
+            <article id="SBranislav" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Stanković Branislav</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- SBranislav -->
+
+            <article id="RBojan" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Radičević Bojan</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- RBojan -->
+
+            <article id="LMiodrag" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Lazarević Miodrag</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- LMiodrag -->
+
+            <article id="SMilos" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Simić Miloš</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- SMilos -->
+
+            <article id="DjNenad" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Đukić Nenad</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- DjNenad -->
+
+            <article id="PMilan" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Popović Milan</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- PMilan -->
+
+            <article id="ANemanja" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Aleksić Nemanja</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- ANemanja -->
+
+            <article id="SAleksandar" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Simović Aleksandar</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- SAleksandar -->
+
+            <article id="KAleksandar" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Kasalović Aleksandar</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- KAleksandar -->
+
+            <article id="BMilos" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Božović Miloš</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- BMilos -->
+
+            <article id="UBogdan" class="player row">
+              <div class="player-img col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/untitled-1.png" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="player-info col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Utvić Bogdan</h3>
+                <p class="player-birthday">Datum rođenja: 10.01.1987.</p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- UBogdan -->
+
+            <article id="BBranislav" class="player row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/DSCF6648.jpg" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Božović Branislav</h3>
+                <p class="player-birthday">Datum rođenja: <span>10.01.1987</span></p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- BBranislav -->
+            
+            <article id="BNedeljko" class="player row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="images/tim/DSCF6648.jpg" alt="Photo of Gašić Aleksandar" class="img-responsive">
+              </div><!-- col player image -->
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3 class="player-name">Božović Nedeljko</h3>
+                <p class="player-birthday">Datum rođenja: <span>10.01.1987</span></p>
+                <p class="player-position">Pozicija: <span>golman</span></p>
+              </div><!-- col player info -->
+            </article><!-- BNedeljko -->
+          </section><!-- players -->
+          
         </div><!-- row -->
       </div><!-- container -->
-    </section><!-- clubs -->
+    </section><!-- team-players -->
 
-    <!-- home page footer -->
+    <!-- page footer -->
     <footer class="page-footer text-center">
       <div class="container">
         
-        <div class="row">  
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <p><i class="fa fa-phone fa-lg"></i> 064/33-60-336</p>
-            <p><i class="fa fa-envelope fa-lg"></i> rkmokragora@gmail.com</p>
-            </ul>
-          </div><!-- col -->
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <p><i class="fa fa-map-marker fa-lg"></i> Arsenija Čarnojevića 26,
-                <br>
-                38228 Zubin Potok</p>
-            <p><i class="fa fa-home fa-lg"></i> SRC Mokra Gora</p>
-          </div><!-- col -->
-          <div class="col-lg-4 col-md-4 col-sm-4">
-           <p class="text-uppercase">Lajkujte nas</p>
-           <a href="#" title="Lajkujte RK Mokra Gora na fejsbuku" class="facebook"><i class="fa fa-facebook-official fa-3x"></i></a>
-          </div><!-- col -->
-        </div><!-- row -->
+        <!-- info -->
+        <article class="info">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <p><i class="fa fa-phone fa-lg"></i> 064/33-60-336</p>
+              <p><i class="fa fa-envelope fa-lg"></i> rkmokragora@gmail.com</p>
+            </div><!-- col -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <p><i class="fa fa-home fa-lg"></i> SRC Mokra Gora</p>
+            </div><!-- col -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <p><i class="fa fa-map-marker fa-lg"></i> Arsenija Čarnojevića 26</p>
+              <p>Zubin Potok</p>
+            </div><!-- col -->
+          </div><!-- row -->
+        </article><!-- info -->
 
-      <p>© 2015 Rukometni klub "Mokra Gora" Zubin Potok. Sva prava zadržana.</p>
-      <a href="#top" title="Na vrh stranice" class="na-vrh"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+        <!-- clubs -->
+        <article class="liga-clubs hidden-xs">
+          <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=1" target="_blank" title="RK Šamot 65"><img src="images/liga/samot.png" alt="Logo RK Šamot" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=2" target="_blank" title="RK Obilić"><img src="images/liga/obilic.png" alt="Logo RK Obilić" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=3" target="_blank" title="RK Proleter"><img src="images/liga/proleter.png" alt="Logo RK Proleter" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=4" target="_blank" title="RK Metalac"><img src="images/liga/metalac.png" alt="Logo RK Metalac" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=5" target="_blank" title="RK Zlatar"><img src="images/liga/zlatar.png" alt="Logo RK Zlatar" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=6" target="_blank" title="RK Dubočica 54"><img src="images/liga/dubocica.png" alt="Logo RK Dubočica 54" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=7" target="_blank" title="RK Crvenka"><img src="images/liga/crvenka.png" alt="Logo RK Crvenka" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=8" target="_blank" title="RK Mokra Gora"><img src="images/logo.png" alt="Logo RK Mokra Gora" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=9" target="_blank" title="RK Dinamo"><img src="images/liga/dinamo.png" alt="Logo RK Dinamo" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=10" target="_blank" title="RK Kolubara"><img src="images/liga/kolubara.png" alt="Logo RK Kolubara" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=11" target="_blank" title="RK Vrbas"><img src="images/liga/vrbas.png" alt="Logo RK Vrbas" width="45" height="45"></a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+              <a href="http://srls.rs/b_liga/tim.php?idt=12" target="_blank" title="RK Topličanin"><img src="images/liga/toplicanin.png" alt="Logo RK Topličanin" width="45" height="45"></a>
+            </div>
+          </div><!-- row -->
+        </article><!-- clubs -->
+          
+        <p>© 2015 Rukometni klub "Mokra Gora" Zubin Potok. Sva prava zadržana.</p>
+        <a href="#top" title="Na vrh stranice" class="na-vrh"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
      
       </div><!-- container -->
     </footer><!-- page-footer -->
@@ -271,6 +400,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
- 
+
+    <script type="text/javascript">
+    // initiates affix plugin on #nav 
+    $('#nav').affix({
+      offset: {
+          top: $('#nav').offset().top,
+          bottom: $('footer').outerHeight(true)
+      }
+    });
+    </script>
+
   </body>
 </html>
