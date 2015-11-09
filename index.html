@@ -30,8 +30,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- google map -->
-    <script style="" src="https://maps.googleapis.com/maps/api/js"></script>
   </head>
 
   <!-- body with id for back-to-top button in footer -->
@@ -298,8 +296,6 @@
       </div>
     </section> -->
 
-    <div id="map"></div>
-
     <!-- page footer -->
     <footer class="page-footer text-center">
       <div class="container">
@@ -373,24 +369,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- google map -->
-    <script>
-    var myCenter=new google.maps.LatLng(42.9157385,20.696881);
-      function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: myCenter,
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          scrollwheel: false,
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker=new google.maps.Marker({
-        position:myCenter,
-      });
-        marker.setMap(map);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+
   </body>
 </html>

@@ -121,12 +121,7 @@ a.thumbnail:hover {
 .fb-page blockquote a:hover {
 	text-decoration: none;
 }
-/* ======= map
-========================= */
-#map {
-	width: 100%;
-	height: 400px;
-}
+
 /* ======= clubs
 ========================= */
 .liga-clubs {
@@ -189,6 +184,24 @@ body.team {
 }
 .affix-bottom {
 	position: fixed;
+}
+
+/* -- STRUCNI STAB PAGE
+-- */
+
+/* -- RASPORED PAGE
+-- */
+.plan-kola {
+	margin: 40px 0;
+}
+.kolo {
+	margin-bottom: 20px;
+}
+/* -- KONTAKT PAGE
+-- */
+#map {
+	width: 100%;
+	height: 400px;
 }
 /* 	=============
 	media queries */
