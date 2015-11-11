@@ -19,9 +19,13 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <!-- stylesheets -->
-    <!-- <link href="css/bootstrap-image-gallery.min.css" rel="stylesheet" > -->
+    <!-- blueimp gallery stylesheet -->
+    <link href="css/blueimp-gallery.min.css" rel="stylesheet">
+
+    <!-- bootstrap stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom stylesheet -->
     <link href="css/mystyles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,7 +37,7 @@
   </head>
 
   <!-- body with id for back-to-top button in footer -->
-  <body id="top">
+  <body id="top" class="gallery-page">
 
     <!-- navigation menu -->
     <nav class="navbar navbar-default">
@@ -71,91 +75,42 @@
       </div><!-- /.container -->
     </nav><!-- navigation menu -->
 
-    <!-- jumbotron -->
-    <div class="jumbotron text-center">
-        <a href="#" title="Tim za sezonu 2015/2016">
-          <div class="jumbotron-caption">
-            <h2 class="text-uppercase">Sezona 2015/2016</h2>
-            <p>Pogledajte naš tim za tekuću sezonu!</p>
-          </div><!-- jumbotron-caption -->
-        </a><!-- link to team page -->
-    </div><!-- jumbotron -->
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      <div class="slides"></div>
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+    </div><!-- blueimp-gallery -->
    
-    <!-- club content -->
-    <section id="club">
+    <!-- galerija fotografija -->
+    <section class="all-gallery">
       <div class="container">
-        <div class="row">
+        <h1>Galerija fotografija</h1>
 
-          <!-- left column -->           
-          <div class="col-lg-8 col-md-8 col-sm-8">
-            <h2 class="text-uppercase">Galerija</h2>
-            <p>Rukometni Klub Mokra Gora iz Zubinog Potoka osnovan je 1976. god. Od osnivanja takmičio se u ligama koje je organizovao Rukometni Savez Kosova i Metohije.</p>
+        <article class="gallery row">
+          <div id="gallery1" class="col-lg-3">
+            <a href="images/poz.png" title="Kovana ograda 1" data-gallery> 
+              <img src="images/poz.png" alt="Kovana ograda 1" class="img-responsive">
+            </a><!-- slika -->
           </div><!-- col -->
+          <div id="gallery2" class="col-lg-3">
+            <a href="images/poz1.jpg" title="Kovana ograda 1" data-gallery> 
+              <img src="images/poz1.jpg" alt="Kovana ograda 1" class="img-responsive">
+            </a><!-- slika -->            
+          </div><!-- col -->
+          <div id="gallery3" class="col-lg-3">
+            <a href="images/poz2.jpg" title="Kovana ograda 1" data-gallery> 
+              <img src="images/poz2.jpg" alt="Kovana ograda 1" class="img-responsive">
+            </a><!-- slika -->                
+          </div><!-- col -->
+        </article><!-- gallery -->
 
-          <!-- side-club-content -->
-          <aside class="side-content">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              
-              <div class="row">
-                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://srls.rs/b_liga/main.php" target="_blank" title="Tabela, rezultati, statistika i najave mečeva na sajtu Super B lige Srbije" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-calendar-check-o fa-lg"></i> &nbsp;Tabela, rezultati, statistika</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->    
-                </div><!-- col Tabela -->
-
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://www.rss.org.rs/#rss/glasilo/licence/klubovi:1962" target="_blank" title="Ekipa i licence na sajtu Rukometnog saveza Srbije" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-users fa-lg"></i> &nbsp;Licence igrača</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Licence-->
-                
-                <!-- clearfix for only the xs viewport (for columns clear) (potrebno da bi isle ispravno jedna ispod druge) -->
-                <div class="clearfix visible-xs-block"></div>
-                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://srls.rs/b_liga/doc/dozvole_za_sezonu_2015_16/8.pdf" target="_blank" title="Dozvola kluba u pdf formatu" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-file-pdf-o fa-lg"></i> &nbsp;Dozvola kluba</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Dozvola-->
-                                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="https://www.youtube.com/channel/UCYpy4_diw5iEjWFjFh6O1zA" target="_blank" title="Pogledajte snimke utakmica na Youtube kanalu Rukometne superlige" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-film fa-lg"></i> &nbsp;Snimci utakmica SLS</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Snimci -->
-              
-              </div><!-- row -->
-
-              <!-- facebook-feed -->
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="thumbnail">
-                    <div class="fb-page" data-href="https://www.facebook.com/rk.mokragora" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-                      <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/rk.mokragora">
-                          <a href="https://www.facebook.com/rk.mokragora"><i class="fa fa-facebook-official fa-lg"></i> &nbsp;RK Mokra Gora</a>
-                        </blockquote>
-                      </div><!-- fb-xfbml-parse-ignore -->
-                    </div><!-- fb-page -->
-                  </div><!-- thumbnail -->
-                </div><!-- col facebook -->
-              </div><!-- facebook-feed -->
-          
-            </div><!-- col -->  
-          </aside> <!-- side-club-content -->
-
-        </div><!-- row -->
       </div><!-- container -->
-    </section><!-- club -->
+    </section><!-- galerija fotografija -->
 
 
     <!-- page footer -->
@@ -229,8 +184,45 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- blueimp-gallery -->
+    <script src="js/blueimp-gallery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
- 
+    
+    <script>
+      // blueimp-gallery initialization
+      document.getElementById('gallery1').onclick = function (event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement,
+              link = target.src ? target.parentNode : target,
+              options = {index: link, event: event},
+              gallery1 = this.getElementsByTagName('a');
+          blueimp.Gallery(gallery1, options);
+      }; // gallery1
+      
+      // blueimp-gallery initialization
+      document.getElementById('gallery2').onclick = function (event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement,
+              link = target.src ? target.parentNode : target,
+              options = {index: link, event: event},
+              gallery2 = this.getElementsByTagName('a');
+          blueimp.Gallery(gallery2, options);
+      }; // gallery2
+
+      // blueimp-gallery initialization
+      document.getElementById('gallery3').onclick = function (event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement,
+              link = target.src ? target.parentNode : target,
+              options = {index: link, event: event},
+              gallery3 = this.getElementsByTagName('a');
+          blueimp.Gallery(gallery3, options);
+      }; // gallery3
+
+    </script>
+
   </body>
 </html>
