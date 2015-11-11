@@ -235,12 +235,12 @@ body.team {
 		line-height: 50px;
 	}
 	.navbar-brand {
-		margin: 0;
+		margin: 10px 0 0 0;
 		padding: 0;
 	} 
 	.navbar-brand > img {
-		width: 80px;
-		height: 80px;
+		width: 60px;
+		height: 60px;
 	}
 
 	/* jumbotron */
@@ -311,7 +311,7 @@ body.team {
 		font-size: 48px;
 	}
 
-	/* index.html */
+	/* ekipa.html */
 	.players {
 		padding-left: 100px;
 	}	
