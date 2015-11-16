@@ -74,7 +74,7 @@ h2 {
 	width: 100%;
 }
 /* ======= FIXTURES 
-========================= */
+========================= 
 .prev-fixture {
 	padding: 10px 0 30px;
 }
@@ -90,7 +90,7 @@ h2 {
 }
 .next-fixture-date {
 	font-size: 18px;
-}
+} */
 /* ======= CLUB
 ===================== */
 .club {
@@ -125,7 +125,7 @@ a.thumbnail:hover {
 /* ======= clubs
 ========================= */
 .liga-clubs {
-	padding: 40px 0 30px;
+	padding: 80px 0 60px;
 }
 .liga-clubs img {
     filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
@@ -145,7 +145,7 @@ a.thumbnail:hover {
 .page-footer {
 	position: relative;
 	padding: 40px;
-	background-color: #1F1F1F;
+	background: transparent url("../images/black-mosaic.png") repeat scroll 0% 0%;
 	color: #DDD;
 }
 .na-vrh {
@@ -197,11 +197,53 @@ body.team {
 .kolo {
 	margin-bottom: 20px;
 }
+
+/* -- GALERIJA PAGE
+-- */
+.galleries {
+	padding: 80px 0;
+	text-align: center;
+}
+.select-gallery [class*=' col-'] {
+	padding: 0;
+} /* no padding on columns */
+.thumbnail {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.thumbnail-caption {
+	position: absolute;
+	bottom: 0;
+	padding-left: 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-shadow: 2px 2px #ff0000;
+}
+.hover-effect {
+	background: url(../images/zoom.png) #42b078 no-repeat center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.thumbnail:hover .hover-effect {
+	opacity: .8;
+	filter: alpha(opacity=80);
+}
+.thumbnail:hover .thumbnail-caption {
+	display: none;
+}
 /* -- KONTAKT PAGE
 -- */
 #map {
 	width: 100%;
-	height: 600px;
+	height: 650px;
 }
 .form-control {
 	border-radius: 0;
@@ -209,6 +251,7 @@ body.team {
 .form-group .btn {
 	border-radius: 0;
 }
+
 /* 	=============
 	media queries */
 
@@ -299,7 +342,7 @@ body.team {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	.jumbotron {
-		min-height: 700px;
+		min-height: 650px;
 	}
 
 	/* index.html */
