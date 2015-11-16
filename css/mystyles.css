@@ -231,6 +231,10 @@ body.team {
 	height: 100%;
 	opacity: 0;
 	filter: alpha(opacity=0);
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
 }
 .thumbnail:hover .hover-effect {
 	opacity: .8;

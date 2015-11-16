@@ -94,9 +94,9 @@
                   <a href="http://srls.rs/b_liga/doc/raspored_rsl_b_2015_2016.pdf" target="_blan">Preuzmite plan datuma odigravanja utakmica i nadoknada kola</a>
                 </div><!-- col -->
                 <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-right">
-                  <select name="Kola">
+                  <select id="kola">
                     <option value="" disabled selected>-- Izaberite kolo --</option>
-                    <option value="#1-kolo">1. kolo</option>
+                    <option value="1-kolo">1. kolo</option>
                     <option value="2-kolo">2. kolo</option>
                     <option value="3-kolo">3. kolo</option>
                     <option value="4-kolo">4. kolo</option>
@@ -116,13 +116,13 @@
                     <option value="18-kolo">18. kolo</option>
                     <option value="19-kolo">19. kolo</option>
                     <option value="20-kolo">20. kolo</option>
-                    <option value="#21-kolo">21. kolo</option>
+                    <option value="21-kolo">21. kolo</option>
                     <option value="22-kolo">22. kolo</option>
                   </select>
                 </div><!-- col -->
               </div><!-- row -->
 
-              <div class="kolo row text-center">
+              <div id="1-kolo" class="kolo row text-center">
                 <p>1. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/zlatar.png" alt="Logo RK Zlatar" class="img-responsive">
@@ -141,7 +141,7 @@
                 </div><!-- col -->
               </div><!-- 1 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="2-kolo" class="kolo row text-center">
                 <p>2. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -160,7 +160,7 @@
                 </div><!-- col -->
               </div><!-- 2 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="3-kolo" class="kolo row text-center">
                 <p>3. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/crvenka.png" alt="Logo RK Crvenka" class="img-responsive">
@@ -179,7 +179,7 @@
                 </div><!-- col -->
               </div><!-- 3 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="4-kolo" class="kolo row text-center">
                 <p>4. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/toplicanin.png" alt="Logo RK Topličanin" class="img-responsive">
@@ -198,7 +198,7 @@
                 </div><!-- col -->
               </div><!-- 4 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="5-kolo" class="kolo row text-center">
                 <p>5. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -217,7 +217,7 @@
                 </div><!-- col -->
               </div><!-- 5 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="6-kolo" class="kolo row text-center">
                 <p>6. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/kolubara.png" alt="Logo RK Kolubara" class="img-responsive">
@@ -236,7 +236,7 @@
                 </div><!-- col -->
               </div><!-- 6 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="7-kolo" class="kolo row text-center">
                 <p>7. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -255,7 +255,7 @@
                 </div><!-- col -->
               </div><!-- 7 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="8-kolo" class="kolo row text-center">
                 <p>8. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/samot.png" alt="Logo RK Šamot 65" class="img-responsive">
@@ -274,7 +274,7 @@
                 </div><!-- col -->
               </div><!-- 8 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="9-kolo" class="kolo row text-center">
                 <p>9. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -293,7 +293,7 @@
                 </div><!-- col -->
               </div><!-- 9 kolo row -->
               
-              <div class="kolo row text-center">
+              <div id="10-kolo" class="kolo row text-center">
                 <p>10. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/proleter.png" alt="Logo RK Proleter" class="img-responsive">
@@ -312,7 +312,7 @@
                 </div><!-- col -->
               </div><!-- 10 kolo row -->
               
-              <div class="kolo row text-center">
+              <div id="11-kolo" class="kolo row text-center">
                 <p>11. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -331,7 +331,7 @@
                 </div><!-- col -->
               </div><!-- 11 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="12-kolo" class="kolo row text-center">
                 <p>12. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -350,7 +350,7 @@
                 </div><!-- col -->
               </div><!-- 12 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="13-kolo" class="kolo row text-center">
                 <p>13. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/dubocica.png" alt="Logo RK Dubočica 54" class="img-responsive">
@@ -369,7 +369,7 @@
                 </div><!-- col -->
               </div><!-- 13 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="14-kolo" class="kolo row text-center">
                 <p>14. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -388,7 +388,7 @@
                 </div><!-- col -->
               </div><!-- 14 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="15-kolo" class="kolo row text-center">
                 <p>15. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -407,7 +407,7 @@
                 </div><!-- col -->
               </div><!-- 15 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="16-kolo" class="kolo row text-center">
                 <p>16. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/dinamo.png" alt="Logo RK Dinamo" class="img-responsive">
@@ -426,7 +426,7 @@
                 </div><!-- col -->
               </div><!-- 16 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="17-kolo" class="kolo row text-center">
                 <p>17. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -445,7 +445,7 @@
                 </div><!-- col -->
               </div><!-- 17 kolo row -->                        
 
-              <div class="kolo row text-center">
+              <div id="18-kolo" class="kolo row text-center">
                 <p>18. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/vrbas.png" alt="Logo RK Vrbas" class="img-responsive">
@@ -464,7 +464,7 @@
                 </div><!-- col -->
               </div><!-- 18 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="19-kolo" class="kolo row text-center">
                 <p>19. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -483,7 +483,7 @@
                 </div><!-- col -->
               </div><!-- 19 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="20-kolo" class="kolo row text-center">
                 <p>20. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/obilic.png" alt="Logo RK Obilić" class="img-responsive">
@@ -503,7 +503,7 @@
               </div><!-- 20 kolo row -->
 
 
-              <div class="kolo row text-center">
+              <div id="21-kolo" class="kolo row text-center">
                 <p>21. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/logo.png" alt="Logo RK Mokra Gora" class="img-responsive">
@@ -522,7 +522,7 @@
                 </div><!-- col -->
               </div><!-- 21 kolo row -->
 
-              <div class="kolo row text-center">
+              <div id="22-kolo" class="kolo row text-center">
                 <p>22. kolo</p>
                 <div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
                   <img src="images/liga/metalac.png" alt="Logo RK Metalac" class="img-responsive">
@@ -682,6 +682,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
- 
+    
+    <script type="text/javascript">
+      // omogucuje skrolovanje na stranici u zavisnosti od izbora opcije u Select elementu
+      $(function () {
+        $('#kola').change(function () {
+          $('html,body').animate({ scrollTop: $("#" + $(this).val()).offset().top }, 'slow');
+            });
+        });
+    </script>
+
   </body>
 </html>
