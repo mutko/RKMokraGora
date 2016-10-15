@@ -50,16 +50,17 @@
         </div><!-- navbar-header -->
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html" title="Početna stranica" class="text-uppercase">Naslovna</a></li>
-            <li><a href="o-klubu.html" title="O RK Mokra Gora" class="text-uppercase">Klub</a></li>
-            
+
+            <li><a href="o-klubu.html" title="O RK Mokra Gora" class="text-uppercase">O klubu</a></li>
+            <li><a href="vesti.html" title="Vesti i novosti" class="text-uppercase">Vesti</a></li>
             <li class="dropdown">
-              <a href="#" title="Tim RK Mokra Gora" class="text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ekipa 2015/2016 <span class="caret"></span></a>
+              <a href="#" title="Tim RK Mokra Gora" class="text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sezona 2016/2017 <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="ekipa.html" title="Tim za tekuću sezonu">Tim</a></li>
-                  <li><a href="strucni-stab.html" title="Uprava i stručni štab kluba">Osoblje</a></li>
                   <li><a href="raspored.html" title="Raspored mečeva u tekućoj sezoni">Raspored utakmica</a></li>
+                  <li><a href="ekipa.html" title="Tim za tekuću sezonu">Ekipa</a></li>
+                  <li><a href="strucni-stab.html" title="Uprava i stručni štab kluba">Osoblje</a></li>
                 </ul><!-- dropdown-menu -->
             </li><!-- dropdown -->
             
@@ -72,28 +73,23 @@
     </nav><!-- navigation menu -->
 
     <!-- jumbotron -->
-    <div class="jumbotron text-center">
-      <div class="jumbotron-caption">
-        <h2 class="text-uppercase">Raspored utakmica | Sezona 2015/2016</h2>
-      </div><!-- jumbotron-caption -->
-    </div><!-- jumbotron -->
+    <div class="container"><div class="jumbotron"></div><!-- jumbotron --></div>
    
     <!-- raspored -->
     <section class="raspored-aside">
       <div class="container">
         <div class="row">
-
           <!-- left column -->           
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
             
             <!-- raspored -->
             <article class="raspored">
-              
+              <h2 class="text-center">Raspored utakmica | Sezona 2015/2016</h2>
               <div class="plan-kola row">
-                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
-                  <a href="http://srls.rs/b_liga/doc/raspored_rsl_b_2015_2016.pdf" target="_blan">Preuzmite plan datuma odigravanja utakmica i nadoknada kola</a>
+                <div class="plan-download col-lg-9 col-md-8 col-sm-7 col-xs-12">
+                  <a href="http://srls.rs/b_liga/doc/raspored_rsl_b_2015_2016.pdf" target="_blan"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> &nbsp; Preuzmite plan datuma odigravanja utakmica i nadoknada kola</a>
                 </div><!-- col -->
-                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 text-right">
+                <div class="select-list col-lg-3 col-md-4 col-sm-5 col-xs-12">
                   <select id="kola">
                     <option value="" disabled selected>-- Izaberite kolo --</option>
                     <option value="1-kolo">1. kolo</option>
@@ -544,66 +540,66 @@
             </article><!-- raspored -->  
           </div><!-- col left column -->
                     
-          <!-- side-club-content -->
-          <aside class="side-content">
-            <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-12">
-              
-              <div class="row">
-                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://srls.rs/b_liga/main.php" target="_blank" title="Tabela, rezultati, statistika i najave mečeva na sajtu Super B lige Srbije" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-calendar-check-o fa-lg"></i> &nbsp;Tabela, rezultati, statistika</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->    
-                </div><!-- col Tabela -->
+          <!-- right column -->
+            <aside class="side-content col-lg-offset-1 col-lg-3 col-md-4 col-sm-4">
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://www.rss.org.rs/#rss/glasilo/licence/klubovi:1962" target="_blank" title="Ekipa i licence na sajtu Rukometnog saveza Srbije" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-users fa-lg"></i> &nbsp;Licence igrača</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Licence-->
-                
-                <!-- clearfix for only the xs viewport (for columns clear) (potrebno da bi isle ispravno jedna ispod druge) -->
-                <div class="clearfix visible-xs-block"></div>
-                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://srls.rs/b_liga/doc/dozvole_za_sezonu_2015_16/8.pdf" target="_blank" title="Dozvola kluba u pdf formatu" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-file-pdf-o fa-lg"></i> &nbsp;Dozvola kluba</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Dozvola-->
-                                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="https://www.youtube.com/channel/UCYpy4_diw5iEjWFjFh6O1zA" target="_blank" title="Pogledajte snimke utakmica na Youtube kanalu Rukometne superlige" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-film fa-lg"></i> &nbsp;Snimci utakmica SLS</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Snimci -->
-              
-              </div><!-- row -->
+              <!-- logo superb lige -->
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo-superb">
+                <a href="http://srls.rs/b_liga/main.php" target="_blank" title="Super B liga Srbije"><img src="images/logo-superb.gif" class="img-responsive" alt="Logo Super B lige Srbije"></a>
+              </div><!-- logo superb lige -->
 
-              <!-- facebook-feed -->
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="thumbnail">
-                    <div class="fb-page" data-href="https://www.facebook.com/rk.mokragora" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-                      <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/rk.mokragora">
-                          <a href="https://www.facebook.com/rk.mokragora"><i class="fa fa-facebook-official fa-lg"></i> &nbsp;RK Mokra Gora</a>
-                        </blockquote>
-                      </div><!-- fb-xfbml-parse-ignore -->
-                    </div><!-- fb-page -->
-                  </div><!-- thumbnail -->
-                </div><!-- col facebook -->
-              </div><!-- facebook-feed -->
-          
-            </div><!-- col -->  
-          </aside> <!-- side-club-content -->
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a href="http://srls.rs/b_liga/tabela.php" target="_blank" title="Tabela, rezultati, statistika i najave mečeva na sajtu Super B lige Srbije" class="thumbnail">
+                  <div class="caption">
+                    <p><i class="fa fa-calendar-check-o fa-lg"></i> &nbsp;Tabela, rezultati, statistika</p>
+                  </div><!-- thumbnail-caption -->
+                </a><!-- thumbnail -->    
+              </div><!-- col Tabela -->
+
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a href="http://www.rss.org.rs/#rss/glasilo/licence/klubovi:1962" target="_blank" title="Ekipa i licence na sajtu Rukometnog saveza Srbije" class="thumbnail">
+                  <div class="caption">
+                    <p><i class="fa fa-users fa-lg"></i> &nbsp;Licence igrača</p>
+                  </div><!-- thumbnail-caption -->
+                </a><!-- thumbnail -->
+              </div><!-- col Licence-->
+
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a href="http://srls.rs/b_liga/doc/dozvole_za_sezonu_2015_16/8.pdf" target="_blank" title="Dozvola kluba u pdf formatu" class="thumbnail">
+                  <div class="caption">
+                    <p><i class="fa fa-file-pdf-o fa-lg"></i> &nbsp;Dozvola kluba</p>
+                  </div><!-- thumbnail-caption -->
+                </a><!-- thumbnail -->
+              </div><!-- col Dozvola-->
+                              
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a href="https://www.youtube.com/channel/UCYpy4_diw5iEjWFjFh6O1zA" target="_blank" title="Pogledajte snimke utakmica na Youtube kanalu Rukometne superlige" class="thumbnail">
+                  <div class="caption">
+                    <p><i class="fa fa-film fa-lg"></i> &nbsp;Snimci utakmica SLS</p>
+                  </div><!-- thumbnail-caption -->
+                </a><!-- thumbnail -->
+              </div><!-- col Snimci -->
+              
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a href="https://www.facebook.com/rk.mokragora" target="_blank" title="Pronađite nas na fejsbuku" class="thumbnail">
+                  <div class="caption">
+                    <p><i class="fa fa-facebook-official fa-lg"></i> &nbsp;RK Mokra Gora</p>
+                  </div><!-- thumbnail-caption -->
+                </a><!-- thumbnail -->
+              </div><!-- col Snimci -->
+
+              <!-- logo rukometne super lige -->
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center logo-lige">
+                <a href="http://srls.rs/srls/main.php" target="_blank" title="Super rukometna liga Srbije"><img src="images/logo-liga.jpg" alt="Logo Super lige"></a>
+              </div><!-- logo rukometne super lige -->
+              
+              <!-- logo rukometnog saveza Srbije -->
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <a href="http://rss.org.rs/" target="_blank" title="Rukometni savez Srbije"><img src="images/logo-rss.png" alt="Logo RSS"></a>
+              </div><!-- logo rukometnog saveza Srbije -->
+
+            </aside> <!-- side-club-content -->
+            
         </div><!-- row -->
       </div><!-- container -->
     </section><!-- raspored -->

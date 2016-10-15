@@ -9,15 +9,21 @@
     <meta name="keywords" content="rukometni klub Mokra Gora, rukometni klub Zubin Potok, Zubin Potok, Mokra Gora, rukomet, rukometni klub, super b liga">
     <meta name="author" content="Branko Bozovic">
     
-    <title>Rukometni klub Mokra Gora | Zvanična prezentacija kluba</title>
+    <title>RK Mokra Gora | Zvanična prezentacija kluba</title>
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+    <link rel="icon" type="image/png" sizes="72x72"  href="images/favicons/android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-70x70.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Play:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Play:400,700&subset=latin,latin-ext' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
 
     <!-- stylesheets -->
     <!-- <link href="css/bootstrap-image-gallery.min.css" rel="stylesheet" > -->
@@ -33,289 +39,473 @@
   </head>
 
   <!-- body with id for back-to-top button in footer -->
-  <body id="top" class="index">
-    
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root" class="fb_reset"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- navigation menu -->
-    <nav class="navbar navbar-default">
-      <div class="container">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html" title="Početna stranica"><img src="images/logo.png"><span class="hidden-xs hidden-sm">RK Mokra Gora</span></a>
-        </div><!-- navbar-header -->
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html" title="Početna stranica" class="text-uppercase">Naslovna</a></li>
-            <li><a href="o-klubu.html" title="O RK Mokra Gora" class="text-uppercase">Klub</a></li>
-            
-            <li class="dropdown">
-              <a href="#" title="Tim RK Mokra Gora" class="text-uppercase dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ekipa 2015/2016 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="ekipa.html" title="Tim za tekuću sezonu">Tim</a></li>
-                  <li><a href="strucni-stab.html" title="Uprava i stručni štab kluba">Osoblje</a></li>
-                  <li><a href="raspored.html" title="Raspored mečeva u tekućoj sezoni">Raspored utakmica</a></li>
-                </ul><!-- dropdown-menu -->
-            </li><!-- dropdown -->
-            
-            <li><a href="galerija.html" title="Galerija fotografija" class="text-uppercase">Galerija</a></li>
-            <li><a href="kontakt.html" title="Kontaktirajte nas" class="text-uppercase">Kontakt</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-
-      </div><!-- /.container -->
-    </nav><!-- navigation menu -->
-
-    <!-- jumbotron -->
-    <div class="jumbotron text-center">
-        <a href="ekipa.html" title="Tim za sezonu 2015/2016">
-          <div class="jumbotron-caption">
-            <h2 class="text-uppercase">Sezona 2015/2016</h2>
-            <p>Pogledajte naš tim za tekuću sezonu!</p>
-          </div><!-- jumbotron-caption -->
-        </a><!-- link to team page -->
-    </div><!-- jumbotron -->
-
-    <!-- fixtures -->
-
-    <!--     PREDVIDJENO ZA FIXTURES SECTION
-
-        HTML JE U POSEBNOM FAJLU, A CCS VEC NAPISAN -->
-
-    <!-- fixtures -->
-   
-    <!-- club content -->
-    <section class="club">
+  <body id="top" class="index-page">
+    <!-- page-header -->
+    <header class="page-header">
       <div class="container">
         <div class="row">
 
-          <!-- left column -->           
-          <div class="col-lg-8 col-md-8 col-sm-8">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="club-brand">
+              <a href="index.html" title="Početna stranica"><img src="images/logo.png">RK Mokra Gora</a>            
+            </div><!-- club-brand -->
+          </div><!-- col -->
+
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <!-- navigation menu -->
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    Menu
+                </button>
+              </div><!-- navbar-header -->
+
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="o-klubu.html" title="O RK Mokra Gora" class="text-lowercase">O klubu</a></li>
+                  <li><a href="vesti.html" title="Vesti i novosti" class="text-lowercase">Vesti</a></li>
+                  <li><a href="ekipa.html" title="Tim za tekuću sezonu" class="text-lowercase">Ekipa</a></li>
+                  <li><a href="galerija.html" title="Galerija fotografija" class="text-lowercase">Galerija</a></li>
+                  <li><a href="kontakt.html" title="Kontaktirajte nas" class="text-lowercase">Kontakt</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->        
+            </nav><!-- navigation menu -->
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- /.container -->
+    </header><!-- page-header -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron"></div><!-- jumbotron -->
+
+    <!-- welcome-match  -->
+    <section class="welcome-match">
+      <div class="container">
+        <div class="row">
           
-            <!-- about-club -->
-            <div class="row">
+          <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+            <article class="welcome">
+              <h2>Dobro došli!</h2>
+              <p>Poštovani čitaoci, prijatelji, saradnici i navijači, dobro došli na sajt RK  Mokra Gora. Pozivamo vas da pregledate naš sajt i upoznate se kako sa bogatom istorijom našeg kluba, tako i sa trenutnim takmičenjima u kojima klub nastupa. Čvrsto verujemo da ćemo sadržajem opravdati vaša očekivanja te uoči skorijeg početka novih takmičenja, želimo svima uspešan rad i novu sezonu!</p>
+            </article><!-- welcome -->
+          </div><!-- col -->
+
+          <!-- next match -->
+          <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 next-match-heading">
+              <p>Sledeći meč</p>
+            </div><!-- next-match-heading -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 next-match-box">       
+              <div class="next-match clearfix">
+                <span class="home-team">
+                  <img src="images/logo.png" alt="Logo tima" width="60" height="60">
+                  <span class="team-title">RK Mokra Gora</span>
+                </span><!-- home-team -->
+                <span class="time-and-place">
+                  <span>15/10/2016</span>
+                  <span>19:00h</span>
+                </span><!-- time-and-place -->
+                <span class="guest-team">
+                  <img src="images/liga/obilic.png" alt="Logo tima" width="60" height="60">
+                  <span class="team-title">RK Obilić</span>
+                </span><!-- guest-team -->
+              </div><!-- next-match -->
+            </div><!-- next-match-box -->
+          </div><!-- col    -->
+
+        </div><!-- row -->
+      </div><!-- container -->   
+    </section><!-- welcome-match  -->
+
+    <!-- latest-news  -->
+    <section class="latest-news">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h3><a href="vesti.html" title="Pročitaj vesti">Vesti, događaji i najave</a></h3>
+          </div><!-- col section heading -->
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 latest-news-1">
+            <div class="wrapper">
+                <div class="col-xs-4 col-sm-4 col-md-5 col-lg-4 latest-news-img">
+                  <a href="news-html/vest-1.html" title="Pročitaj vest">
+                    <img src="images/vest-1.jpg" alt="Najnovija vest 1">
+                  </a>
+                </div><!-- col image -->
+                <div class="col-xs-8 col-sm-8 col-md-7 col-lg-8 latest-news-text">
+                  <p class="latest-news-date">12/10/2016</p>
+                  <h4>Derbi četvrtog kola!</h4>
+                  <p id="limit1">Rukometaši Mokre Gore kao prvoplasirani dočekuju RK Obilić iz Beograda.</p> <!-- class limit for jquery at end of page -->
+                </div><!-- col latest-news-text -->
+            </div><!-- wrapper is needed for-equal-height-bg for columns -->
+            <a href="news-html/vest-1.html" class="btn btn-default" type="button">Opširnije</a>
+          </div><!-- col latest-news-1 -->
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 latest-news-2">
+            <div class="wrapper">
+                <div class="col-xs-4 col-sm-4 col-md-5 col-lg-4 latest-news-img">
+                  <a href="news-html/vest-2.html" title="Pročitaj vest">
+                    <img src="images/vest-2.jpg" alt="Najnovija vest 2">
+                  </a>
+                </div><!-- col image -->
+                <div class="col-xs-8 col-sm-8 col-md-7 col-lg-8 latest-news-text">
+                  <p class="latest-news-date">6/10/2016</p>
+                  <h4>Treća uzastopna pobeda!</h4>
+                  <p id="limit2">Rukometaši Mokre Gore zabeležili su i treću uzastopnu pobedu!</p> <!-- class limit for jquery at end of page -->
+                </div><!-- col latest-news-text -->
+              </div><!-- col latest-news-text -->
+            <a href="news-html/vest-2.html" class="btn btn-default" type="button">Opširnije</a>
+          </div><!-- col latest-news-2 -->
+        </div><!-- row -->
+      </div><!-- container -->   
+    </section><!-- latest-news  -->
+
+    <!-- team-gallery-aside -->
+    <section class="team-gallery-aside">
+      <div class="container">
+        <div class="row">
+
+          <!-- left column -->
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <article class="link-to-team thumbnail">
+                <a href="ekipa.html" title="Pogledaj našu ekipu"><img src="images/tim-2.jpg" alt="Tim u sezoni 2016/2017"></a>
+                <div class="caption">
+                  <h3><a href="ekipa.html" title="Pogledaj našu ekipu">Ekipa 2016/2017</a></h3>
+                  <hr>
+                  <p>Pogledajte igrače, stručni štab i osoblje kluba RK Mokra Gora u sezoni 2016/2017</p>
+                </div><!-- caption -->
+              </article><!-- link-to-team -->
+             </div><!-- team col -->
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <article class="link-to-gallery thumbnail">
+                <div class="caption">
+                  <h3><a href="galerija.html" title="Pogledajte galeriju fotografija">Galerija fotografija</a></h3>
+                  <hr>
+                  <p>Pogledajte najzanimljivije momente sa naših utakmica, priprema, treninga...</p>
+                </div><!-- caption -->
+                <a href="galerija.html" title="Pogledajte galeriju fotografija"><img src="images/tim-3.jpg" alt="Tim u sezoni 2016/2017"></a>
+              </article><!-- link-to-gallery -->
+            </div><!-- gallery-preview col -->
+
+          </div><!-- left col -->
+
+          <!-- right column -->
+          <aside class="side-content"> 
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+              <!-- latest-scores -->
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="o-klubu.html" class="thumbnail" title="O RK Mokra Gora">
-                  <img src="images/galerija/tale-4.jpg" alt="..." class="img-responsive" >
-                  <div class="caption">
-                    <h2 class="text-uppercase">RK Mokra Gora</h2>
-                    <p>Rukometni Klub Mokra Gora iz Zubinog Potoka osnovan je 1976. god. Od osnivanja takmičio se u ligama koje je organizovao Rukometni Savez Kosova i Metohije... <i class="fa fa-caret-right fa-lg"></i></p>
-                  </div><!-- caption -->
-                </a><!-- thumbnail -->
-              </div><!-- col -->
-            </div><!-- row -->
-                                 
-            <!-- team and gallery -->
-            <div class="row">          
+                <div class="side-banner latest-scores">
+                  <a href="http://srls.rs/b_liga/rezultati.php" target="_blank" title="Rezultati i izveštaji sa mečeva na sajtu Super B rukometne lige Srbije">
+                    <div class="banner-content">
+                      <h3 class="banner-title">Poslednji rezultati</h3>
+                      <p class="banner-text">Rezultati i izveštaji sa utakmica</p>
+                    </div><!-- banner-content -->
+                  </a><!-- link -->   
+                </div><!-- side-banner -->
+              </div><!-- latest-scores -->
 
-              <!-- team -->
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <a href="ekipa.html" class="thumbnail" title="Tim za sezonu 2015/2016">
-                  <img src="images/galerija/tale-1.jpg" alt="..." class="img-responsive">
-                  <div class="thumbnail-caption">
-                    <h3>Ekipa 2015/2016</h3>
-                  </div><!-- caption -->
-                  <div class="hover-effect"></div><!-- hover-effect -->
-                </a><!-- thumbnail -->
-              </div><!-- col -->
+              <!-- table -->
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="side-banner curent-table">
+                  <a href="http://srls.rs/b_liga/tabela.php" target="_blank" title="Trenutna tabela na sajtu Super B rukometne lige Srbije">
+                    <div class="banner-content">
+                      <h3 class="banner-title">Trenutna tabela</h3>
+                      <p class="banner-text">Trenutno stanje na tabeli</p>
+                    </div><!-- banner-content -->
+                  </a><!-- link -->   
+                </div><!-- side-banner -->
+              </div><!-- table -->
 
-              <!-- gallery -->
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <a href="galerija.html" class="thumbnail" title="Galerija fotografija">
-                  <img src="images/galerija/tale-3.jpg" alt="..." class="img-responsive">
-                  <div class="thumbnail-caption">
-                    <h3>Galerija fotografija</h3>
-                  </div><!-- thumbnail-caption -->
-                  <div class="hover-effect"></div><!-- hover-effect -->
-                </a><!-- thumbnail -->
-              </div><!-- col -->
-
-            </div><!-- row team and gallery -->
-          </div><!-- col about team and gallery-->
-
-          <!-- side-club-content -->
-          <aside class="side-content">
-            <div class="col-lg-4 col-md-4 col-sm-4">
+              <!-- live-matches -->
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="side-banner live-matches">
+                  <a href="http://www.srls.rs/srls/uzivo.php" target="_blank" title="Utakmice Super i SuperB rukometne lige Srbije">
+                    <div class="banner-content">
+                      <h3 class="banner-title">Utakmice uživo</h3>
+                      <p class="banner-text">Utakmice Super i SuperB lige</p>
+                    </div><!-- banner-content -->
+                  </a><!-- link -->   
+                </div><!-- side-banner -->
+              </div><!-- live-matches -->
               
-              <div class="row">
-                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://srls.rs/b_liga/main.php" target="_blank" title="Tabela, rezultati, statistika i najave mečeva na sajtu Super B lige Srbije" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-calendar-check-o fa-lg"></i> &nbsp;Tabela, rezultati, statistika</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->    
-                </div><!-- col Tabela -->
-
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://www.rss.org.rs/#rss/glasilo/licence/klubovi:1962" target="_blank" title="Ekipa i licence na sajtu Rukometnog saveza Srbije" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-users fa-lg"></i> &nbsp;Licence igrača</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Licence-->
-                
-                <!-- clearfix for only the xs viewport (for columns clear) (potrebno da bi isle ispravno jedna ispod druge) -->
-                <div class="clearfix visible-xs-block"></div>
-                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="http://srls.rs/b_liga/doc/dozvole_za_sezonu_2015_16/8.pdf" target="_blank" title="Dozvola kluba u pdf formatu" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-file-pdf-o fa-lg"></i> &nbsp;Dozvola kluba</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Dozvola-->
-                                
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <a href="https://www.youtube.com/channel/UCYpy4_diw5iEjWFjFh6O1zA" target="_blank" title="Pogledajte snimke utakmica na Youtube kanalu Rukometne superlige" class="thumbnail">
-                    <div class="caption">
-                      <p><i class="fa fa-film fa-lg"></i> &nbsp;Snimci utakmica SLS</p>
-                    </div><!-- thumbnail-caption -->
-                  </a><!-- thumbnail -->
-                </div><!-- col Snimci -->
-              
-              </div><!-- row -->
-
-              <!-- facebook-feed -->
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="thumbnail">
-                    <div class="fb-page" data-href="https://www.facebook.com/rk.mokragora" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-                      <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/rk.mokragora">
-                          <a href="https://www.facebook.com/rk.mokragora"><i class="fa fa-facebook-official fa-lg"></i> &nbsp;RK Mokra Gora</a>
-                        </blockquote>
-                      </div><!-- fb-xfbml-parse-ignore -->
-                    </div><!-- fb-page -->
-                  </div><!-- thumbnail -->
-                </div><!-- col facebook -->
-              </div><!-- facebook-feed -->
-          
-            </div><!-- col -->  
+            </div><!-- col -->
           </aside> <!-- side-club-content -->
-   
+
+        </div><!-- row -->
+      </div><!-- container -->   
+    </section><!-- team-gallery-aside  -->
+
+
+    <!-- about-club -->
+    <section class="about-club-section">
+      <div class="container">
+        <div class="row">
+          <div class="wrapper">
+          
+            <!-- left column -->
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+              <a href="o-klubu.html" title="Pročitaj našu priču">
+                <img src="images/tim-4.jpg" alt="Ekipa RK Mokra Gora" class="img-responsive">
+              </a>
+            </div><!-- left column -->
+
+            <!-- right column -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <article class="link-to-about">
+                <h3>RK Mokra Gora</h3>
+                <h4>Zubin Potok</h4>
+                <a href="o-klubu.html" class="btn btn-default">O nama</a>
+              </article>
+            </div><!-- right column -->
+
+          </div><!-- wrapper -->
         </div><!-- row -->
       </div><!-- container -->
-    </section><!-- club -->
+    </section><!-- about-club-section -->
 
-  
-    <!-- clubs's friends -->
-  <!--  <section class="club-friends text-center">
+    <!-- documents -->
+    <section class="documents-section">
       <div class="container">
+        <div class="row">
+          
+            <!-- adresar -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+              <div class="document-banner">
+                <a href="http://srls.rs/b_liga/doc/klubovi_2016/11.pdf" title="Adresar RK Mokra Gora" target="_blank">
+                  <div class="document-banner-inner">
+                    <figure class="document-icon">
+                      <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                    </figure>
+                    <hr>
+                    <figcaption class="document-icon-title">
+                      <h4>Adresar<br>kluba</h4>
+                    </figcaption>
+                  </div><!-- document-banner-inner -->
+                </a>
+              </div><!-- document-banner -->
+            </div><!-- adresar -->
 
-     
-        <article class="friends">
-           <h2>Prijatelji kluba</h2>
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="images/zp-logo.jpg" alt="..." class="img-responsive">
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="images/zp-logo.jpg" alt="..." class="img-responsive">
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="images/zp-logo.jpg" alt="..." class="img-responsive">
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="images/zp-logo.jpg" alt="..." class="img-responsive">
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="images/zp-logo.jpg" alt="..." class="img-responsive">
-              </div>
-            </div> 
-        </article> 
+            <!-- dozvola -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+              <div class="document-banner">
+                <a href="http://srls.rs/b_liga/doc/dozvole_za_sezonu_2016_17/11.pdf" title="Dozvola kluba za sezonu 2016/2017" target="_blank">
+                  <div class="document-banner-inner">
+                    <figure class="document-icon">
+                      <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                    </figure>
+                    <hr>
+                    <figcaption class="document-icon-title">
+                      <h4>Dozvola<br>kluba</h4>
+                    </figcaption>
+                  </div><!-- document-banner-inner -->
+                </a>
+              </div><!-- document-banner -->
+            </div><!-- dozvola -->
 
-      </div>
-    </section> -->
+            <!-- licence -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+              <div class="document-banner">
+                <a href="http://rss.org.rs/#rss/glasilo/licence/klubovi:2174" title="Licence igrača na sajtu Rukometnog saveza Srbije" target="_blank">
+                  <div class="document-banner-inner">
+                    <figure class="document-icon">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </figure>
+                    <hr>
+                    <figcaption class="document-icon-title">
+                      <h4>Licence<br>igrača</h4>
+                    </figcaption>
+                  </div><!-- document-banner-inner -->
+                </a>
+              </div><!-- document-banner -->
+            </div><!-- licence -->
+
+            <!-- raspored -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+              <div class="document-banner">
+                <a href="http://srls.rs/b_liga/raspored.php" title="Raspored utakmica u sezoni 2016/2017 na sajtu Super B lige" target="_blank">
+                  <div class="document-banner-inner">
+                    <figure class="document-icon">
+                      <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    </figure>
+                    <hr>
+                    <figcaption class="document-icon-title">
+                      <h4>Raspored<br>utakmica</h4>
+                    </figcaption>
+                  </div><!-- document-banner-inner -->
+                </a>
+              </div><!-- document-banner -->
+            </div><!-- raspored -->
+
+        </div><!-- row -->
+      </div><!-- container -->
+    </section><!-- documents-section -->
+
+    <!-- club-friends -->
+    <section class="club-friends">
+      <div class="container">
+        <h3>Sponzori i prijatelji kluba</h3> 
+        <article class="friends">         
+          <div class="row">          
+            <div class="col-xs-offset-4 col-xs-4 col-sm-4 col-md-offset-5 col-md-2 col-lg-2">
+              <a href="http://zubin-potok.org.rs" target="_blank" title="Poseti sajt opštine Zubin Potok u novom prozoru">
+                <img src="images/sponzori/logo-zp.png" alt="Logo Opštine Zubin Potok" class="img-responsive">
+              </a>
+            </div><!-- col -->
+          </div><!-- row opstina -->
+          <div class="row friends-logos">
+            <div class="col-xs-5 col-sm-offset-1 col-sm-4 col-md-4 col-lg-offset-3 col-lg-2">
+              <a href="http://srls.rs/srls/main.php" target="_blank" title="Poseti sajt Rukometne Super lige Srbije u novom prozoru">
+                <img src="images/sponzori/logo-liga.jpg" alt="Logo Super lige" width="175" height="70">
+              </a>
+            </div><!-- col super -->
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <a href="http://rss.org.rs" target="_blank" title="Poseti sajt Rukometnog saveza Srbije u novom prozoru">
+                <img src="images/sponzori/logo-rss.png" alt="Logo RSS" width="70" height="70">
+              </a>
+            </div><!-- col rss -->
+            <div class="col-xs-5 col-sm-4 col-md-4 col-lg-2">
+              <a href="http://srls.rs/b_liga/main.php" target="_blank" title="Poseti sajt Rukometne Super B lige Srbije u novom prozoru">
+                <img src="images/sponzori/logo-superb.png" alt="Logo SuperB lige" width="175" height="70">
+              </a>
+            </div><!-- col superb -->
+          </div><!-- row -->
+        </article><!-- friends -->
+      </div><!-- container -->
+    </section><!-- club-friends -->
+    
+    <!-- skola-rukometa -->
+    <section class="skola-rukometa">
+      <div class="container">
+        <div class="row">
+              <!-- left column -->
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>Sve informacije o upisu dece u školu rukometa možete dobiti na telefon <span>065/68-20-501</span></p>
+              </div><!-- left column -->
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </section><!-- skola-rukometa -->
 
     <!-- page footer -->
-    <footer class="page-footer text-center">
-      <div class="container">
-        
-        <!-- info -->
-        <article class="info">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              <p><i class="fa fa-phone fa-lg"></i> 064/33-60-336</p>
-              <p><i class="fa fa-envelope fa-lg"></i> rkmokragora@gmail.com</p>
-            </div><!-- col -->
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              <p><i class="fa fa-home fa-lg"></i> SRC Mokra Gora</p>
-            </div><!-- col -->
-            <div class="col-lg-4 col-md-4 col-sm-4">
-              <p><i class="fa fa-map-marker fa-lg"></i> Arsenija Čarnojevića 26</p>
-              <p>Zubin Potok</p>
-            </div><!-- col -->
-          </div><!-- row -->
-        </article><!-- info -->
+    <footer>
 
-        <!-- clubs -->
-        <article class="liga-clubs hidden-xs">
+      <!-- lets connect -->
+      <article class="lets-connect text-center">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=1" target="_blank" title="RK Šamot 65"><img src="images/liga/samot.png" alt="Logo RK Šamot" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=2" target="_blank" title="RK Obilić"><img src="images/liga/obilic.png" alt="Logo RK Obilić" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=3" target="_blank" title="RK Proleter"><img src="images/liga/proleter.png" alt="Logo RK Proleter" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=4" target="_blank" title="RK Metalac"><img src="images/liga/metalac.png" alt="Logo RK Metalac" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=5" target="_blank" title="RK Zlatar"><img src="images/liga/zlatar.png" alt="Logo RK Zlatar" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=6" target="_blank" title="RK Dubočica 54"><img src="images/liga/dubocica.png" alt="Logo RK Dubočica 54" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=7" target="_blank" title="RK Crvenka"><img src="images/liga/crvenka.png" alt="Logo RK Crvenka" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=8" target="_blank" title="RK Mokra Gora"><img src="images/logo.png" alt="Logo RK Mokra Gora" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=9" target="_blank" title="RK Dinamo"><img src="images/liga/dinamo.png" alt="Logo RK Dinamo" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=10" target="_blank" title="RK Kolubara"><img src="images/liga/kolubara.png" alt="Logo RK Kolubara" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=11" target="_blank" title="RK Vrbas"><img src="images/liga/vrbas.png" alt="Logo RK Vrbas" width="45" height="45"></a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1">
-              <a href="http://srls.rs/b_liga/tim.php?idt=12" target="_blank" title="RK Topličanin"><img src="images/liga/toplicanin.png" alt="Logo RK Topličanin" width="45" height="45"></a>
-            </div>
+
+            <!-- left column -->
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+              <h4>Povežimo se</h4>
+              <p>Zašto nas ne bi zapratili na socijalnim mrežama? Pratite najnovije vesti, dešavanja i događaje vezane za naš klub, a takođe voleli bi da čujemo i vaš glas. Pa, zapratite nas!</p>
+              <ul class="list-unstyled link-list">
+                <li>
+                  <a href="https://www.facebook.com/rk.mokragora/" title="Lajkujte nas na fejsbuku" target="_blank">
+                    <img src="images/social-icons/fb.jpg" alt="Facebook logo" width="50" height="50">
+                  </a>
+                </li><!-- facebook -->
+                <li>
+                  <a href="https://www.instagram.com/rkmokgora_kolasin/" title="Pratite nas na instagramu" target="_blank">
+                    <img src="images/social-icons/in.jpg" alt="Instagram logo" width="50" height="50">
+                  </a>
+                </li><!-- instagram -->
+              </ul><!-- link-list -->
+            </div><!-- left column -->
+
+            <!-- right column -->
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-offset-1 col-lg-4">
+              <h4>Pratite nas na<br>fejsbuku</h4>
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frkmokragora&tabs&width=340&height=230&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="230" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><!-- facebook iframe -->
+            </div><!-- right column -->
           </div><!-- row -->
-        </article><!-- clubs -->
-          
-        <p>© 2015 Rukometni klub "Mokra Gora" Zubin Potok. Sva prava zadržana.</p>
-        <a href="#top" title="Na vrh stranice" class="na-vrh"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+        </div><!-- container -->
+      </article><!-- lets connect -->
      
-      </div><!-- container -->
-    </footer><!-- page-footer -->
+      <div class="page-footer text-center">
+        <div class="container">
+
+          <!-- info -->
+          <article class="info">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 064/33-60-336</p>
+                <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> rkmokragora@gmail.com</p>
+              </div><!-- col -->
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <p><span class="glyphicon glyphicon-home" aria-hidden="true"></span> SRC Mokra Gora</p>
+              </div><!-- col -->
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Jelene Anžujske bb</p>
+                <p>Zubin Potok</p>
+              </div><!-- col -->
+            </div><!-- row -->
+          </article><!-- info -->
+
+          <!-- clubs -->
+          <article class="liga-clubs hidden-xs">
+            <div class="row">
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=3" target="_blank" title="RK Vranje 1957"><img src="images/liga/vranje.png" alt="Logo RK Vranje 1957" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=5" target="_blank" title="RK Obilić"><img src="images/liga/obilic.png" alt="Logo RK Obilić" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=6" target="_blank" title="RK Proleter"><img src="images/liga/proleter.png" alt="Logo RK Proleter" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=2" target="_blank" title="RK Novi Pazar"><img src="images/liga/pazar.png" alt="Logo RK Novi Pazar" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=9" target="_blank" title="RK Zlatar"><img src="images/liga/zlatar.png" alt="Logo RK Zlatar" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=12" target="_blank" title="RK Dubočica 54"><img src="images/liga/dubocica.png" alt="Logo RK Dubočica 54" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=4" target="_blank" title="RK Sinđelić"><img src="images/liga/sindjelic.png" alt="Logo RK Sinđelić" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=8" target="_blank" title="RK Mokra Gora"><img src="images/logo.png" alt="Logo RK Mokra Gora" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=8" target="_blank" title="RK Priboj"><img src="images/liga/priboj.png" alt="Logo RK Priboj" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=7" target="_blank" title="RK Inđija"><img src="images/liga/indjija.png" alt="Logo RK Inđija" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=10" target="_blank" title="RK Kolubara"><img src="images/liga/kolubara.png" alt="Logo RK Kolubara" width="45" height="45"></a>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1">
+                <a href="http://srls.rs/b_liga/tim.php?idt=1" target="_blank" title="RK Topličanin"><img src="images/liga/toplicanin.png" alt="Logo RK Topličanin" width="45" height="45"></a>
+              </div>
+            </div><!-- row -->
+          </article><!-- clubs -->
+            
+          <p>© 2016 Rukometni klub "Mokra Gora" Zubin Potok. Sva prava zadržana.</p>
+          <a href="#top" title="Na vrh stranice" class="na-vrh"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+       
+        </div><!-- container -->
+      </div><!-- page-footer -->
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript">
+      // limit paragraph on 300 characters
+      var myDiv = $('#limit1');
+      myDiv.text(myDiv.text().substring(0,100));
+      var myDiv = $('#limit2');
+      myDiv.text(myDiv.text().substring(0,100));
+    </script>
   </body>
 </html>

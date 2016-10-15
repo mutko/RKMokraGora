@@ -1,152 +1,481 @@
 body {
 	font-family: 'Play', sans-serif;
 	font-size: 16px;
+	background-color: #f5f5f5;
 }
-/* ===== typography
+/* ===== typography and comon styles
  ====================== */
 h1,
-h2 {
-	font-weight: bold;
+h2,
+h3,
+h4 {
+	font-family: 'Roboto Slab', serif;
+}
+a {
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+}
+.btn-default {
+	border-radius: 0;
+	color: #fff;
+	border-color: #fff;
+	background-color: transparent;
+	font-size: 16px;
+	padding: 10px 20px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default:active:hover {
+	color: #1E732D;
+	background-color: transparent;
+	border-color: #1E732D;
+}
+.btn-default-2 {
+	border-radius: 0;
+	background-color: transparent;
+	color: #555;
+	border-color: #ccc;
+	margin-top: 20px;
+	padding: 15px 25px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.btn-default-2:hover,
+.btn-default-2:focus,
+.btn-default-2:active,
+.btn-default-2:active:hover {
+	color: #fff;
+	background-color: #1E732D;
+}
+/* ======= PAGE-HEADER
+========================= */
+.page-header {
+    padding: 10px 0 15px;
+    margin: 0;
+    border: none;
+    background: transparent url("../images/black-mosaic.png") repeat scroll 0% 0%;
 }
 /* ======= NAVBAR
 ========================= */
 .navbar-default {
 	border: none;
 	border-radius: 0;
+	background: transparent;
+	text-align: center;
+	font-size: 20px;
 }
 .navbar {
 	margin-bottom: 0;
 }
-.navbar-header {
+.nav > li > a {
+	padding: 20px 30px;
+}
+.club-brand {
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 2px;
+	font-family: 'Roboto Slab', serif;
+}
+.club-brand img {
+	display: inline-block;
+	margin-right: 20px;
+	width: 80px;
 	height: 80px;
+}
+.navbar-toggle {
+	float: none;
+	width: 100%;
+	font-size: 22px;
 }
 .navbar-default .navbar-toggle {
 	margin-top: 20px;
+	padding-bottom: 14px;
 	border: none;
 	background-color: #1E732D;
+	border-radius: 0;
 }
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle {
 	background-color: #fff;
 }
+.navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-	background-color: #303030;
+	background-color: #fff;
+	color: #63b459;
 }
-.navbar-default .navbar-toggle:focus {
-	background-color: #303030;
-}
-.navbar-brand {
-	font-weight: bold;
-	text-transform: uppercase;
-}
-.navbar-brand > img {
-	display: inline-block;
-	margin-right: 20px;
-	width: 50px;
-	height: 50px;
-}
-.navbar-default .navbar-brand,
+.club-brand a,
 .navbar-default .navbar-nav > li > a,
 .dropdown-menu > li > a,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	color: #1E732D;
-	font-weight: bold;
+	color: #fff;
 }
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-	background-color: #fff;
-	color: #333;
+.club-brand:focus,
+.club-brand:hover,
+.club-brand a:focus,
+.club-brand a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #63b459;
+    text-decoration: none;
 }
-/* ======= JUMBOTRON 
+.navbar-default .navbar-collapse {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #63b459;
+	background-color: transparent;
+}
+.glyphicon-menu-hamburger {
+	top: 5px;
+	margin-right: 5px;
+}
+/* ======= JUMBOTRON
 ========================= */
 .jumbotron {
-	background: url(../images/poz.png) #ccc no-repeat center;
+	min-height: 400px;
+	background: url(../images/tim-1.jpg) #ccc no-repeat center;
 	background-size: cover;
-	min-height: 450px;
-	position: relative;
-	margin-bottom: 0;
+	background-attachment: scroll;
+	padding: 0;
+	margin: 0 0 100px 0;
 }
-.jumbotron a {
-	text-decoration: none;
-}
-.jumbotron-caption {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-/* ======= FIXTURES 
-========================= 
-.prev-fixture {
-	padding: 10px 0 30px;
-}
-.fixture-team {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 22px;
-	letter-spacing: 0.5px;
-}
-.prev-score {
-	font-weight: bold;
-	font-size: 48px;
-}
-.next-fixture-date {
-	font-size: 18px;
-} */
-/* ======= CLUB
-===================== */
-.club {
-	padding: 60px 0 40px;
-}
-.thumbnail {
-	border: none;
-}
-a.thumbnail:hover {
-	text-decoration: none;
-}
-/* ======= ASIDE
+/* ======= WELCOME NEWS
 ========================= */
-.side-content {
+.welcome {
+	line-height: 1.6;
+	padding-right: 30px;
+}
+.welcome h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+.next-match-box {
+	padding: 0;
+}
+.next-match-heading {
+	font-family: 'Roboto Slab', serif;
+	padding: 15px 20px;
+	font-size: 20px;
+	font-weight: 400;
 	text-align: center;
 }
-.side-content p {
-	font-size: 22px;
+.next-match {
+	background-color: #fff;
+	padding: 25px 20px;
+	width: 100%;
+	font-size: 14px;
+	color: #000;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	clear: both;
+	box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
 }
-.fb-page blockquote {
-	border: none;
-	padding-left: 10px;
-	font-size: 22px;
+.home-team {
+	float: left;
+	width: 32%;
 }
-.fb-page blockquote a {
-	color: #333;
+.time-and-place {
+	float: left;
+	width: 36%;
+	font-weight: 300;
 }
-.fb-page blockquote a:hover {
-	text-decoration: none;
+.guest-team {
+	float: left;
+	width: 32%;
+}
+.team-title {
+	display: block;
+}
+/* ======= LATEST NEWS
+===================== */
+.latest-news {
+	padding: 80px 0;
+	margin: 120px 0;
+	background: url(../images/bg-1.jpg) #ccc no-repeat center;
+	background-size: cover;
+}
+.latest-news h3 {
+	margin: 0 0 40px;
+	color: #fff;
+}
+.latest-news h3 a {
+	color: #fff;
+}
+.latest-news h4 {
+	color: #000;
+}
+.latest-news-1 {
+	margin-bottom: 30px;
+}
+.latest-news-img {
+	padding: 0;
+}
+.latest-news-img img {
+	width: 100%;
+	height: 100%;
+}
+.latest-news-text {
+	padding: 20px 10px;
+}
+.latest-news a.btn {
+	display: block;
+	float: right;
+	margin-top: 20px;
+}
+.wrapper {
+	overflow: hidden;
+	background-color: rgba(255,255,255,.7);
 }
 
-/* ======= clubs
-========================= */
-.liga-clubs {
-	padding: 80px 0 60px;
+/* ======= TEAM-GALLERY-ASIDE
+===================== */
+.thumbnail {
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.2);
+	margin-bottom: 40px;
+	margin-left: -15px;
+	margin-right: -15px;
 }
-.liga-clubs img {
+.thumbnail .caption {
+	padding: 43px 12% 61px;
+}
+.thumbnail h3 {
+	padding-bottom: 15px;
+}
+.thumbnail a:hover {
+	color: #1E732D;
+}
+
+/* ======= ASIDE
+========================= */
+.side-banner {
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    margin: 0 -15px 10px;
+    background-color: #1e1e1e;
+    -webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.banner-content {
+	padding: 30px 0;
+}
+.banner-title {
+    padding: 20px 20px 0 20px;
+    margin: 0;
+    font-size: 26px;
+    font-family: 'Roboto Slab', serif;
+}
+.banner-text {
+	padding: 10px 20px 20px 20px;
+	margin: 0;
+	color: #727272;
+}
+.side-banner a {
+	color: #fff;
+}
+.latest-scores {
+	background-color: #1d3b72;
+}
+.curent-table {
+	background-color: #1b3058;
+}
+.side-banner:hover {
+	background-color: #1E732D;
+}
+.side-banner:hover .banner-text {
+	color: #fff;
+}
+/* ======= ABOUT CLUB SECTION
+========================= */
+.about-club-section {
+	margin: 80px 0 120px;
+}
+.about-club-section .wrapper {
+	background-color: #1e1e1e;
+	margin: 0 15px;
+}
+.about-club-section [class^="col-"] {
+	padding-left: 0;
+	padding-right: 0;
+} /* jedan do drugog, no padding */
+.link-to-about {
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+}
+.link-to-about h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 32px;
+	font-family: 'Play', sans-serif;	
+}
+.link-to-about h4 {
+	padding: 10px 0 40px;
+	color: #727272;
+}
+.link-to-about .btn-default {
+	padding: 20px 75px;
+	border-top: solid 1px #727272;
+	border-bottom: solid 1px #727272;
+	font-weight: bold;
+	border-left: none;
+	border-right: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+.link-to-about .btn-default:hover {
+	background-color: transparent;
+	color: #1E732D;
+	border-color: #727272;
+}
+/* ======= DOCUMENTS SECTION
+========================= */
+.documents-section {
+	background: transparent url("../images/black-mosaic.png") repeat scroll 0% 0%;
+	padding: 80px 0 50px;
+}
+.document-banner a {
+	position: relative;
+	display: block;
+	color: #fff;
+	border: 1px solid rgb(153,153,153);
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.document-banner a:hover {
+	border-color: #fff;
+}
+.document-banner-inner {
+	padding: 60px 30% 50px;
+}
+.document-icon {
+	font-size: 32px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.document-banner hr {
+	margin: 50px 0;
+}
+.document-icon-title {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+a:hover .document-icon {
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
+a:hover .document-icon-title {
+	color: #1E732D;	
+}
+/* ======= CLUB FRIENDS
+========================= */
+.club-friends {
+	background-color: #fff;
+	padding: 60px 0 70px;
+	text-align: center;
+}
+.club-friends h3 {
+	text-align: center;
+}
+.friends img {
+	margin: 10px auto;
+}
+.friends img,
+.liga-clubs img,
+.link-list img:hover {
     filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
-}
+} /* grayscale images */
+.friends img:hover,
 .liga-clubs img:hover {
 	filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
+} /* color images on hover */
+.club-friends ul {
+	display: table;
+	margin: 0 auto;
+}
+.club-friends ul li {
+	display: table-cell;
+	vertical-align: middle;
+	width: 10%;
+}
+/* ======= SKOLA RUKOMETA
+========================= */
+.skola-rukometa {
+	background: transparent url("../images/black-mosaic.png") repeat scroll 0% 0%;
+	padding: 40px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+.skola-rukometa span {
+	color: #1E732D;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'Roboto Slab', serif;
+}
+/* ======= LETS CONNECT 
+========================= */
+.lets-connect {
+	background-color: #fff;
+	padding: 70px 0 80px;
+}
+.lets-connect h4 {
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+.lets-connect p {
+	line-height: 26px;
+	font-size: 18px;
+}
+.link-list {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+.link-list li {
+    margin: 0 20px;
+    display: block;
+    float: left;
+    padding: 0;
+}
+.link-list img {
+	box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
+	border-radius: 50%;
 }
 /* ======= FOOTER 
 ========================= */
 .page-footer {
 	position: relative;
-	padding: 40px;
+	padding: 80px 0 40px;
 	background: transparent url("../images/black-mosaic.png") repeat scroll 0% 0%;
 	color: #DDD;
+}
+.liga-clubs {
+	padding: 80px 0 60px;
 }
 .na-vrh {
 	position: absolute;
@@ -154,7 +483,7 @@ a.thumbnail:hover {
 	right: 20px;
 	color: #fff;
 	font-size: 22px;
-	background-color: #303030;
+	background-color: #232323;
 	border: none;
 	border-radius: 3px;
 	padding: 10px 15px;
@@ -163,207 +492,513 @@ a.na-vrh:hover {
 	background-color: #1E732D;
 	color: #fff;
 }
-
-/* -- TEAM PAGE
+/* -- O-KLUBU PAGE
 -- */
-body.team {
+.jumbotron-small {
+	height: 250px;
+	background: url(../images/bg-2.jpg) #ccc no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 0;
+	margin: 0 0 80px 0;
+}
+.breadcrumb {
+	background-color: transparent;
+	padding: 200px 0 0 0;
+}
+.breadcrumb a {
+	color: #fff;
+	font-size: 20px;
+}
+.breadcrumb a:hover {
+	color: #63b459;
+}
+.breadcrumb .active {
+	color: #63b459;
+}
+.club-story {
+	padding-bottom: 80px;
+}
+.club-story h2 {
 	position: relative;
+	margin: 0 0 65px;
 }
-.team .jumbotron {
-	background: url(../images/tim.jpg) #ccc no-repeat center;
+.club-story h2::after,
+.entry-header h3::after,
+.contact-info h3::after {
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    width: 100%;
+    height: 2px;
+    content: "";
+	border-top: 1px solid #fff;
+	background-color: #e4e4e4;
+} /* horizontal line after some <h> */
+.club-story .side-banner,
+.news .side-banner {
+	padding: 5px 10px;
 }
-.team-players {
-	padding: 60px 0;
+/* -- VESTI PAGE
+-- */
+.news {
+	padding-bottom: 40px;
 }
-.player {
+.entry-news-article {
 	margin-bottom: 40px;
 }
-.affix {
-	top: 20px;
-	position: fixed;
+.entry-header h3,
+.contact-info h3 {
+	position: relative;
+	margin: 30px 0 65px;
 }
-.affix-bottom {
-	position: fixed;
+.entry-header a:hover {
+	color: #1E732D;
+}
+.entry-meta {
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.comments-link {
+	margin-left: 20px;
+}
+.entry-meta .glyphicon {
+	top: 3px;
+	margin-right: 5px;
+}
+.entry-content {
+    margin: 20px 0 10px;
 }
 
-/* -- STRUCNI STAB PAGE
--- */
-
-/* -- RASPORED PAGE
--- */
-.plan-kola {
+     /* pojedinacne vesti */
+.posebna-vest,
+.posebna-vest h3 {
+	margin-bottom: 40px;
+}
+.first-paragraph {
+	font-weight: 600;
+}
+.posebna-vest p {
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+.posebna-vest img {
 	margin: 40px 0;
 }
-.kolo {
-	margin-bottom: 20px;
-}
 
-/* -- GALERIJA PAGE
+/* -- EKIPA PAGE
 -- */
-.galleries {
-	padding: 80px 0;
+.ekipa-info {
+	padding: 10px 15px; 
+	text-transform: uppercase;
+	background-color: #313947;
+	color: #fff;
+}
+.ekipa-info p {
+	margin-bottom: 0;
+}
+.ekipa-info span {
+	font-weight: 500;
+	font-size: 22px;
+}
+.grid-title {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: #d3d6d7;
+	border-left: 3px solid #1b3058;
+	padding: 10px 15px;
+	margin: 60px 0 15px;
+	font-family: 'Play', sans-serif;
+}
+.team-grid figure {
+	margin-bottom: 40px;
+}
+.player-info {
+	background-color: #1d3b72;
+	color: #fff;
+	min-height: 77px;
 	text-align: center;
 }
-.select-gallery [class*=' col-'] {
-	padding: 0;
-} /* no padding on columns */
-.thumbnail {
-	position: relative;
-	padding: 0;
+.single-player img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.single-player p {
 	margin: 0;
 }
-.thumbnail-caption {
-	position: absolute;
-	bottom: 0;
-	padding-left: 20px;
-	color: #FFF;
+/* p.player-number {
+	float: left;
+	padding: 15px 20px;
+	font-size: 32px;
+	font-weight: bold;
+	background-color: #1b3058;
+	margin-right: 10px;
+	height: 77px;
+} */
+.player-name {
+	font-weight: 600;
+	font-size: 20px;
+	padding-top: 10px;
+}
+.player-position {
 	text-transform: uppercase;
-	text-shadow: 2px 2px #ff0000;
+	padding-bottom: 17px;
 }
-.hover-effect {
-	background: url(../images/zoom.png) #42b078 no-repeat center;
+.single-player:hover .player-info {
+	background-color: #2c5e2e;
+}
+/* .single-player:hover p.player-number {
+	background-color: #234B24;
+} */
+/* modal css overwrite */
+.modal-content {
+	border-radius: 0;
+	background-color: #313947;
+	color: #fff;
+}
+.modal-header {
+	padding-left: 30px;
+	border-bottom: none;
+	background-color: #2c5e2e;
+	position: relative;
+}
+.modal-header .close {
+	font-size: 60px;
+	font-weight: 100;
+	color: #fff;
+	text-shadow: none;
 	position: absolute;
+	right: 10px;
 	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+}
+.modal-dialog {
+	width: 80%;
+	margin: 0 auto;
+}
+.player-position-modal {
+	font-size: 20px;
+	padding: 15px 30px 5px;
+}
+.modal-img {
+	display: block;
 	width: 100%;
-	height: 100%;
-	opacity: 0;
-	filter: alpha(opacity=0);
-	-webkit-transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-o-transition: opacity .5s ease-in-out;
-	transition: opacity .5s ease-in-out;
+	height: auto;
 }
-.thumbnail:hover .hover-effect {
-	opacity: .8;
-	filter: alpha(opacity=80);
+/* .modal-body {
+	padding: 15px 40px;
 }
-.thumbnail:hover .thumbnail-caption {
-	display: none;
+.modal-content .table > tbody > tr > th,
+.modal-content .table > tbody > tr > td {
+	border-top: none;
+	padding: 8px 0;
+}
+*/
+/* end off modal css */
+.coach {
+	padding-left: 20px;
+}
+.staff-table {
+	margin: 60px 0 80px 0;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	background-color: #fff;
+}
+.staff-table th {
+	font-weight: 400;
+}
+.staff-table td {
+	font-weight: 600;
+}
+/* -- GALERIJA PAGE
+-- */
+.all-gallery .thumbnail {
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+}
+.all-gallery {
+	padding-bottom: 60px; 
+}
+.gallery img {
+	padding-bottom: 20px;
 }
 /* -- KONTAKT PAGE
 -- */
 #map {
 	width: 100%;
-	height: 650px;
+	height: 300px;
+	margin-bottom: 80px;
+}
+.contact-info h3 {
+	margin: 0 0 60px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.adress-list {
+	margin: 40px 0;
+}
+.contact-list {
+	margin-bottom: 80px;
+}
+.contact-form h3 {
+	margin-bottom: 40px;
+}
+.contact-form {
+	margin-bottom: 80px;
+}
+.form-group {
+	margin: 20px 0;
 }
 .form-control {
 	border-radius: 0;
+	padding: 15px 25px;
+	height: 66px;
 }
-.form-group .btn {
-	border-radius: 0;
+/* -- ERROR-404 PAGE
+-- */
+.error-404 p {
+	font-size: 52px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
 }
-
+.error-404 .error-text {
+	font-size: 32px;
+	margin-bottom: 80px;
+}
 /* 	=============
 	media queries */
 
 /* --------- media queries --------- */
 /* Custom, exstra small mobile phones */ 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 380px) {
+	.lets-connect iframe {
+		width: 100%;
+		margin: 0 auto;
+	}
+} /* Custom, exstra small mobile phones */ 
 
-}
+
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-
-	/* index.html */
-	.fixture-team,
-	.next-fixture-date {
+@media only screen and (max-width: 480px) {
+	/* navbar */
+	.navbar-default {
 		font-size: 18px;
 	}
-
-}
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-	/* navigation menu for site */
-	.navbar-nav > li > a {
-		line-height: 50px;
+	.club-brand {
+		font-size: 18px;
 	}
-	.navbar-brand {
-		margin: 10px 0 0 0;
-		padding: 0;
-	} 
-	.navbar-brand > img {
+	.club-brand img {
+		width: 50px;
+		height: 50px;
+	}
+	/* index.html */
+	.welcome h2 {
+		font-size: 28px;
+	}
+	.welcome p {
+		font-size: 14px;
+	}
+	.latest-news-text p {
+		display: none;
+	}
+	.latest-news h4 {
+		font-size: 16px;
+	}
+	.btn-default-2 {
+		padding: 10px 25px;
+	}
+	.link-to-about {
+		padding: 30px;
+	}
+	.link-to-about h3 {
+		font-size: 22px;
+	}
+	.link-to-about h4 {
+		padding-bottom: 20px;
+	}
+	.link-list li {
+    	margin: 0 10px;
+	}
+	.document-banner-inner {
+		padding: 30px 10px 20px;
+	}
+	.document-banner-inner hr {
+		display: none;
+	}
+	.document-icon-title h4 {
+		font-size: 14px;
+		margin-top: 40px;
+	}
+	.friends-logos img {
+		width: 100%;
+		height: auto;
+	}
+	/* o nama.html */
+	.breadcrumb {
+		padding-top: 150px;
+	}
+	.breadcrumb a {
+		font-size: 16px;
+	}
+	/* ekipa.html */
+	.ekipa-info {
+		padding: 5px 10px; 
+	}
+	.player-info {
+		min-height: auto;
+		text-align: center;
+	}
+	/* p.player-number {
+		float: none;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 24px;
+		margin-right: 0;
+		height: auto;
+	} */
+	.player-name {
+		font-size: 16px;
+		padding-top: 10px;
+	}
+} /* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+	/* page-header & navbar */
+	.page-header {
+		padding: 30px 0;
+	}
+	.club-brand {
+		margin-bottom: 20px;
+	}
+	.club-brand img {
 		width: 60px;
 		height: 60px;
 	}
+	.navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float: none;
+    } /* center nav */
 
-	/* jumbotron */
-	.jumbotron {
-		min-height: 450px;
-	}
-
-	/* index.html */
-	.fixture-team {
-		font-size: 18px;
-	}
-	.prev-score {
-		font-size: 22px;
+    /* index.hmtl */
+    .jumbotron {
+		min-height: 600px;
 	}
 	.side-content {
-		text-align: left;
+		margin-top: 0;
+	}
+	.link-to-team {
+		margin-left: -15px;
+		margin-right: 0;
+	}
+	.link-to-gallery {
+		margin-right: -15px;
+		margin-left: 0;
+	}
+	/* ekipa.html */
+	.all-team {
+		position: relative;
+	}
+	.ekipa-info {
+		background-color: rgba(34,39,51,0.6);
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	.modal-dialog {
+		width: 400px;
 	}
 
-}
-/* end of tablets styles */
+} /* end of tablets styles */
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-
-	/* navigation menu for site */
-	.navbar-default .navbar-nav > li > a {
-		font-size: 18px;
+	/* page-header & navbar */
+	.page-header {
+		padding: 50px 0 30px;
 	}
-
-	/* jumbotron */
-	.jumbotron {
-		min-height: 550px;
+	.page-header .container {
+		width: 100%;
 	}
-	.jumbotron-caption {
-		padding: 30px 0;
+	.club-brand {
+		margin-bottom: 0;
+		font-size: 26px;
 	}
+	.navbar-nav {
+		float: right !important;
+		margin-right: -15px;
+	} /* float nav */
 
 	/* index.html */
-	.prev-fixture {
-		padding: 40px;
+	.jumbotron {
+		min-height: 800px;
 	}
-	.fixture-team {
-		font-size: 20px;
+	.banner-content {
+		padding: 24px 0;
 	}
-	.prev-score {
-		font-size: 36px;
+	.link-to-about h3 {
+		font-size: 26px;
 	}
-
+	.link-to-about h4 {
+		padding: 10px 0 20px;
+	}	
+	/* vesti.html */
+	.entry-news-article {
+		margin-bottom: 80px;
+	}
 	/* ekipa.html */
-	.affix {
-		width: 250px;
+	.player-position {
+		padding-bottom: 8px;
 	}
-
+	.staff-table {
+		width: 50%;
+		max-width: 50%;
+	}
+	/* kontakt.html */
+	#map {
+		height: 350px;
+	}
 }/* end of desktops styles */
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	.jumbotron {
-		min-height: 650px;
+	/* index.hmtl */
+	.page-header .container {
+		width: 1170px;
+	}
+	.club-brand {
+		font-size: 32px;
+	}
+	.club-brand img {
+		width: 70px;
+		height: 70px;
+	}
+	.nav > li > a {
+		padding-top: 23px;
 	}
 
 	/* index.html */
-	.fixture-team {
-		font-size: 22px;
-		line-height: 65px;
+	.latest-news h4 {
+		margin-bottom: 20px;
 	}
-	.prev-score {
-		font-size: 48px;
+	.latest-news-text {
+		padding: 40px 30px;
 	}
-
-	/* ekipa.html */
-	.players {
-		padding-left: 100px;
-	}	
-	.affix {
-		width: 300px;
-	}	
+	.link-to-about h3 {
+		font-size: 32px;
+	}
+	.link-to-about h4 {
+		padding: 10px 0 40px;
+	}
+	#map {
+		height: 400px;
+	}
 
 }/* end of large desktops styles */
